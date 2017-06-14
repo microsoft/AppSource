@@ -31,18 +31,14 @@
 6.	Identify a subscription you want to use for providing test drives. 
 7.	Follow the steps in this [article](https://github.com/Azure/AzureTestDrive/wiki/Setup-your-Azure-subscription-for-Test-Drives) to set up the app in your subscription 
 8.	Start the publish process and complete all the mandatory step and push your app to staging. 
-    * Become a Publisher
-      Please see [Understanding the Publishing Portal](https://github.com/Azure/AzureTestDrive/wiki/Understanding-the-Publishing-Portal) if you are not already a Microsoft Publisher.
-    * 	Create a New Offer
-      Once you are a Publisher, starting a new Test Drive offer is explained <b>[here](https://github.com/Azure/AzureTestDrive/wiki/Create-a-New-Offer).
-    * 	Connect your Azure Account
-      It is required to have an Azure Service Principal and Azure Subscription to publish your Test Drive. Learn how to configure these <b>[here](https://github.com/Azure/AzureTestDrive/wiki/Connect-your-Azure-Account).
-    * 	Add Marketing to your Offer
-      Your Test Drive needs a support contact and a user manual, videos and offer detail descriptions. Set all of that up <b>[here](https://github.com/Azure/AzureTestDrive/wiki/Add-Marketing-to-your-Offer).
+    * Become a Publisher: Please see [Understanding the Publishing Portal](https://github.com/Azure/AzureTestDrive/wiki/Understanding-the-Publishing-Portal) if you are not already a Microsoft Publisher.
+    * 	Create a New Offer: Once you are a Publisher, starting a new Test Drive offer is explained [here](https://github.com/Azure/AzureTestDrive/wiki/Create-a-New-Offer).
+    * 	Connect your Azure Account: It is required to have an Azure Service Principal and Azure Subscription to publish your Test Drive. Learn how to configure these [here](https://github.com/Azure/AzureTestDrive/wiki/Connect-your-Azure-Account).
+    * 	Add Marketing to your Offer: Your Test Drive needs a support contact and a user manual, videos and offer detail descriptions. Set all of that up [here](https://github.com/Azure/AzureTestDrive/wiki/Add-Marketing-to-your-Offer).
     * 	Lead management: Mark the lead management to None
     * 	Configuration
 
-[[https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/config4.png]]
+![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/config4.png)
 
 *	<b>Trial Enabled</b> – Sets your test drive to either Enabled (Yes) or Disabled (No). For test drives in Production, switching to Disabled will hide the test drive from being able to be deployed. If there are any test drives actively used by users, those test drives will continue to run until the session expires.
 
@@ -66,10 +62,8 @@
 
 *	<b>Deployment Regions</b> – Select the Region(s) in which you want/need to deploy the test drive ARM template in.
   (Note: If your test drive uses <b>custom images</b>, make sure you select the same region in which the custom images are stored – otherwise it will fail.)
-* 	Deployment Artifacts
-[[https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/config6.png]]
-
 *	<b>Deployment Artifacts</b> – Upload your test drive ARM template here, in a .zip file. This is the file you offered in the previous section.
+![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/config6.png)
 
   You must upload a zip file containing the Azure Resource Manager (ARM) template to deploy the solution. Please name the main template file: “main-template.json”. 
 
