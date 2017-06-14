@@ -18,8 +18,8 @@ Want to take some test drives before you build your own test drive?
 See also:
 
 * [How does it work?](https://github.com/Microsoft/AppSource/blob/master/How-does-it-work.md)
-* [What does the test drive framework give me?](https://github.com/Microsoft/AppSource/wiki/What-does-the-test-drive-framework-give-me.md)
-* [How do I get started?](https://github.com/Microsoft/AppSource/wiki/GettingStarted.md)
+* [What does the test drive framework give me?](https://github.com/Microsoft/AppSource/blob/master/What-does-the-test-drive-framework-give-me.md)
+* [How do I get started?](https://github.com/Microsoft/AppSource/blob/master/GettingStarted.md)
 
 # Contributing
 
