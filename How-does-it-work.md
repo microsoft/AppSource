@@ -23,5 +23,5 @@ Refer to this section to learn more about what happens in the background with yo
 
 See also:
 
-* [What does the test drive framework give me?](https://github.com/Microsoft/AppSource/wiki/What-does-the-test-drive-framework-give-me%3F)
-* [How do I get started?](https://github.com/Microsoft/AppSource/wiki/How-do-I-get-started%3F)
+* [What does the test drive framework give me?](https://github.com/Microsoft/AppSource/blob/master/What-does-the-test-drive-framework-give-me.md)
+* [How do I get started?](https://github.com/Microsoft/AppSource/blob/master/GettingStarted.md)
