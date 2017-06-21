@@ -14,21 +14,12 @@
 3. 	Register an application in azure to help for single sign on login
 
       *    Navigate to the newly created directory
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
-
       *    And select Azure Active directory in the filter pane.
       *    Search “App registrations” and click on “Add”
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
-
       *    Provide an application name.
       *    Select the Type of as “Web application”
       *    Click create.
       *    After the application has been created, go to  Properties -> Set the application as multi-tenant and hit Save
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub6.jpg)
-
       *    Under keys, add a Key Description, set the duration to two years.
       *    Click Save. This should generate the ClientSecret. 
       *    Click on Required Permissions
@@ -39,6 +30,13 @@
       *    Click on Users and create a new admin admin@yournewtenant.onmicrosoft.com 
       *    Make the user a global admin and save.
       *    Login as the above user and change the admin password
+      
+![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
+
+![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
+
+![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub6.jpg)
+
 4.	Share subscription information 
       *    Create a new subscription or login to an existing Azure subscription you want to use for trials. Its recommended to use a new subscription for resource isolation.
       *    Filter on Subscriptions, find the right subscription and click Manage.
