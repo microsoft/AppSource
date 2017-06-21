@@ -3,8 +3,6 @@
 ### Steps to follow for Azure based application 
 
 
-
-
 1. Develop and test your application 
 2. Enable Azure Active Directory single-sign-on. Steps to enable AAD SSO: 
     *  https://identity.microsoft.com
