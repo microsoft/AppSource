@@ -17,7 +17,7 @@
            * Assigns a user a “DYN365_ENTERPRISE_PLAN1” license if it exists.
            * Assigns a user to a pre-selected role in the CRM instance”
       * The method “DeprovisionUser” as the name suggests de-provisions a user from the Dynamics 365 instance with the same set of steps being performed in the reverse order.
-      * Both functions, have a set of configuration settings which can be found under SendInvitationAndAddUserToCRM (for provision) and CleanupUserFromCRM (for deprovision). These are as below (with comments for individual setting). For instructions on setting up the AAD application refer to the document found here: https://github.com/Azure/AzureTestDrive/wiki/Setup-your-Azure-subscription-for-Test-Drives.  
+      * Both functions, have a set of configuration settings which can be found under SendInvitationAndAddUserToCRM (for provision) and CleanupUserFromCRM (for deprovision). These are as below (with comments for individual setting). For instructions on setting up the AAD application refer to the document found here: https://github.com/Microsoft/AppSource/blob/master/Setup-your-Azure-subscription-for-Dynamics365-Test-Drives.md. 
 
  
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/Dynamics365TestDrive3.png)
