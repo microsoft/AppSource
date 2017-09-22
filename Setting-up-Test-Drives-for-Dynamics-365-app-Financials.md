@@ -19,9 +19,9 @@
       * Both functions, have a set of configuration settings which can be found under SendInvitationAndAddUserToTenant (for provision) and DeprovisionUser (for deprovision). These are as below (with comments for individual setting). For instructions on setting up the AAD application refer to the document found here: https://github.com/Microsoft/AppSource/blob/master/Setup-your-Azure-subscription-for-Dynamics365-Test-Drives.md. 
 
  
-![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/Dynamics365FinancialsFunctionsList.PNG)
+           ![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/Dynamics365FinancialsFunctionsList.PNG)
 
-![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/Dynamics365FinancialsconfigSettings.PNG
+![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/Dynamics365FinancialsconfigSettings.PNG)
 
 5.	Once these functions are configured by the appropriate configuration settings, the settings can be tested by using the “Test” tab on the far right of the Azure functions blade.
  
