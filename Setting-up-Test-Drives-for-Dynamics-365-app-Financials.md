@@ -4,7 +4,7 @@
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/Dynamics365TestDrive1.png)
 
-2. While the ARM deployment is in progress, you need to setup your subscription by following the steps mentioned [here](https://github.com/Microsoft/AppSource/blob/master/Setup-your-Azure-subscription-for-Dynamics365-Test-Drives.md). 
+2. While the ARM deployment is in progress, you need to setup your subscription by following the steps mentioned [here](https://github.com/Microsoft/AppSource/blob/master/Setup-your-Azure-subscription-for-Dynamics365-Financials-Test-Drives.md). 
 
 3. Once your ARM deployment is completed you’ll see a resource group that will look like the one shown below:
 
