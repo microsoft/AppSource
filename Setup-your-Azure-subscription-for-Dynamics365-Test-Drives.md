@@ -43,6 +43,17 @@
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
 
+4. Make the newly created app a “Company Administrator”.
+    *	Install AzureAD powershell extension from [here](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185)
+    *	Type below commands in AzureAD Powershell to make app company administrator
+        *	" Connect-MsolService "  (login screen comes up with this command and use administrator credentials of tenant)
+        *	" Get-MsolServicePrincipal " (Search for the newly created app name and copy the ObjectId)
+        *	" Add-MsolRoleMember -RoleName 'Company Administrator' -RoleMemberType ServicePrincipal -RoleMemberObjectId ‘ObjectId’ " (Replace ‘ObjectId’ with ObjectId copied in above step)
+        
+![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/SetupAzureFinancialsAADPowerShell.png)
+        
+![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/SetupAzureFinancialsAADPowerShell2.PNG)
+
 5. Given, we’re using the application to deploy to the subscription, we need to add the application as a contributor on the subscription. The instructions for these are as below:
       *    Navigate https://portal.azure.com
       *    Navigate to the subscriptions blade and select the appropriate subscription.
