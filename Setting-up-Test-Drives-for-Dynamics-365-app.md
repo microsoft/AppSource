@@ -18,7 +18,6 @@
            * Assigns a user to a pre-selected role in the CRM instance”
       * The method “DeprovisionUser” as the name suggests de-provisions a user from the Dynamics 365 instance with the same set of steps being performed in the reverse order.
       * Both functions, have a set of configuration settings which can be found under SendInvitationAndAddUserToCRM (for provision) and CleanupUserFromCRM (for deprovision). These are as below (with comments for individual setting). For instructions on setting up the AAD application refer to the document found here: https://github.com/Microsoft/AppSource/blob/master/Setup-your-Azure-subscription-for-Dynamics365-Test-Drives.md. 
-
  
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/Dynamics365TestDrive3.png)
 
@@ -29,5 +28,10 @@
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/Dynamics365TestDrive5.jpg)
 
 6.	Be careful to not run de-provision using the admin user (if there’s only one admin), as the only admin user would de-provisioned from the CRM instance essentially locking you out.
+
 7.	The logic apps from “Assign” (a workflow that assigns a user to a CRM instance and license) and “Deprovsion” (a workflow that de-provisions a user at the end of a test-drive) are a wrapper over the Azure function and just call into the respective methods. In case of a CRM only app, the Azure function deployed out of box should just work, although you are more than welcome to customize it.
+
+8.   Now that you have successfully tested your Test Drive, follow the instructions found [here](https://cloudpartner.azure.com/#documentation/logic-app-test-drive) to publish the app in AppSource. 
+If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
+ 
 
