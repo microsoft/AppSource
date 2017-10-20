@@ -28,5 +28,9 @@
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/Dynamics365TestDrive5.jpg)
 
 6.	Be careful to not run de-provision using the admin user (if there’s only one admin), as the only admin user would de-provisioned from the Dynamics 365 instance essentially locking you out.
+
 7.	The logic apps from “Assign” (a workflow that assigns a user to a Dynamicss instance) and “Deprovsion” (a workflow that de-provisions a user at the end of a test-drive) are a wrapper over the Azure function and just call into the respective methods. In case of a Dynamics 365 for Operations only app, the Azure function deployed out of box should just work, although you are more than welcome to customize it.
+
+8.   Now that you have successfully tested your Test Drive, follow the instructions found [here](https://cloudpartner.azure.com/#documentation/logic-app-test-drive) to publish the app in AppSource. 
+If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process.
 
