@@ -1,4 +1,4 @@
-# Setup your Azure subscription for Dynamics 365 for Customer engagement Test Drives
+# Setup your Azure subscription for Dynamics 365 for Customer Engagement Test Drives
 
 1.	Login to your Azure management portal
 2.	Create a new tenant in AAD (if not available already)
