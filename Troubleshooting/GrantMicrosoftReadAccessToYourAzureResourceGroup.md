@@ -2,7 +2,7 @@
 
 Since the Azure Functions and Azure Logic Apps are hosted in your Azure Subscription, Microsoft Test Drive developers cannot see how your Test Drive resources are configured, or gain access to any of your Logic App or Function logs.
 
-Rather than having to manually pull the logs yourself and send to Microsoft, or schedule a call with Microsoft to troubleshoot the issue, you can leverage Azure RBAC (Role Based Access Control) to grant Microsoft Test Drive developer team read access to your Azure Resource Group that contains your Test Drive resources. This allows Microsoft Test Drive developer team to easily your configuration and execution logs to help mitigate the issue.
+Rather than having to manually pull the logs yourself and send to Microsoft, or schedule a call with Microsoft to troubleshoot the issue, you can leverage Azure RBAC (Role Based Access Control) to grant Microsoft Test Drive developer team read access to your Azure Resource Group that contains your Test Drive resources. This allows Microsoft Test Drive developer team to easily view the configuration of your Test Drive resources (Azure Function and Azure Logic App) and review execution logs to help understand and mitigate the issue.
 
 How to grant Microsoft Test Drive developers read access to your Azure Resource Group:
 
@@ -15,7 +15,7 @@ Invite the Microsoft Support User to your Azure AD
 4) Enter the email of the following user: testdrivesupport@dynamicstestdrive.onmicrosoft.com
 5) Click the 'Invite' button
 
-Grant the Microsoft Support User read access to your Azure Resource Group
+Grant the Microsoft Support user read access to your Azure Resource Group
 
 6) Navigate to 'Resource Groups'
 7) Click on the Resource Group your Test Drive resources (Azure Function and Azure Logic Apps) are deployed into.
@@ -28,6 +28,6 @@ Grant the Microsoft Support User read access to your Azure Resource Group
 
 This steps will grant Microsoft Test Drive developer team read-only access to all the Azure Resources you have deployed in the selected Resource Group. 
 
-If you want to remove the read access for Microsoft Test Drive developer team, you can remove the RBAC read permission grant to the user, or remove the testdrivesupport@dynamicstestdrive.onmicrosoft.com guest user from your tenant. 
+If you want to remove the read access for Microsoft Test Drive developer team, you can remove the RBAC read permission granted to the user, or remove the testdrivesupport@dynamicstestdrive.onmicrosoft.com guest user from your tenant. 
 
 Additional information on RBAC: https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-create-custom-roles-for-internal-external-users
