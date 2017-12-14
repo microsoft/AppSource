@@ -8,7 +8,7 @@ How to grant Microsoft Test Drive developers read access to your Azure Resource 
 
 1) Log into the Azure Portal (https://portal.azure.com) with an account that is the owner of the Azure Subscription the Test Drive Resources are deployed to.
 
-Invite the Microsoft Support User to your Azure AD
+Invite the Microsoft Support User to your Azure AD with Azure B2B
 
 2) Navigate to 'Azure Active Directory' -> 'Users and groups' -> 'All users' 
 3) Click the 'new guest user' button in the command bar
