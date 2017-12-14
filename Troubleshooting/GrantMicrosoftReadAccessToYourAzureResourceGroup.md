@@ -8,14 +8,14 @@ How to grant Microsoft Test Drive developers read access to your Azure Resource 
 
 1) Log into the Azure Portal (https://portal.azure.com) with an account that is the owner of the Azure Subscription the Test Drive Resources are deployed to.
 
-Invite the Microsoft Support User to your Azure AD with Azure B2B
+Invite the Microsoft Support user to your Azure AD with Azure B2B
 
 2) Navigate to 'Azure Active Directory' -> 'Users and groups' -> 'All users' 
 3) Click the 'new guest user' button in the command bar
 4) Enter the email of the following user: support@dynamicstestdrive.onmicrosoft.com
 5) Click the 'Invite' button
 
-Grant the Microsoft Support user read access to your Azure Resource Group
+Grant the Microsoft Support user read-only access to your Azure Resource Group
 
 6) Navigate to 'Resource Groups'
 7) Click on the Resource Group your Test Drive resources (Azure Function and Azure Logic Apps) are deployed into.
@@ -26,8 +26,10 @@ Grant the Microsoft Support user read access to your Azure Resource Group
 12) In the 'select' field, search for 'support@dynamicstestdrive.onmicrosoft.com' and select the AD User
 13) Click the 'Save' button
 
-This steps will grant Microsoft Test Drive developer team read-only access to all the Azure Resources you have deployed in the selected Resource Group. 
+These steps will grant Microsoft Test Drive developer team read-only access to all the Azure Resources you have deployed in the selected Resource Group. 
 
-If you want to remove the read access for Microsoft Test Drive developer team, you can remove the RBAC read permission granted to the user, or remove the support@dynamicstestdrive.onmicrosoft.com guest user from your tenant. 
+If you want to remove the read-only access from Microsoft Test Drive developer team, you can remove the RBAC read permission granted to the user, or remove the support@dynamicstestdrive.onmicrosoft.com guest user from your tenant. 
 
-Additional information on RBAC: https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-create-custom-roles-for-internal-external-users
+Additional information on RBAC: 
+ - https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-create-custom-roles-for-internal-external-users
+ - https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-what-is
