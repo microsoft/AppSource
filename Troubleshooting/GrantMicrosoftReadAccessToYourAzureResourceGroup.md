@@ -4,18 +4,18 @@ Since the Azure Functions and Azure Logic Apps used for Test Drive are hosted in
 
 Rather than having to manually retrieve the logs and Azure Function / Azure Logic App configuration yourself to send to Microsoft, or having to schedule a call with Microsoft Test Drive developers to troubleshoot the issue, you can leverage Azure RBAC (Role Based Access Control) to grant Microsoft Test Drive developer team read-only access to your Azure Resource Group that contains your Test Drive resources. This allows Microsoft Test Drive developer team to easily view the configuration of your Test Drive resources (Azure Function and Azure Logic App) and review execution logs to help understand and provide guidance on how to mitigate the issue.
 
-How to grant Microsoft Test Drive developers read access to your Azure Resource Group:
+**How to grant Microsoft Test Drive developers read access to your Azure Resource Group:**
 
 1) Log into the Azure Portal (https://portal.azure.com) with an account that is the owner of the Azure Subscription the Test Drive Resources are deployed to.
 
-Invite the Microsoft Support user to your Azure AD with Azure B2B
+**Invite the Microsoft Support user to your Azure AD with Azure B2B**
 
 2) Navigate to 'Azure Active Directory' -> 'Users and groups' -> 'All users' 
 3) Click the 'new guest user' button in the command bar
 4) Enter the email of the following user: support@dynamicstestdrive.onmicrosoft.com
 5) Click the 'Invite' button
 
-Grant the Microsoft Support user read-only access to your Azure Resource Group
+**Grant the Microsoft Support user read-only access to your Azure Resource Group**
 
 6) Navigate to 'Resource Groups'
 7) Click on the Resource Group your Test Drive resources (Azure Function and Azure Logic Apps) are deployed into.
