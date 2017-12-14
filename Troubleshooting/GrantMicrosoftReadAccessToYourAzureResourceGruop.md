@@ -1,5 +1,33 @@
-﻿If your Dynamics 365 Test Drive is deployed to Azure, but not functionally correctly, you may need to engage Microsoft Test Drive developer team for assistance. 
+﻿If your Dynamics 365 Test Drive is deployed to Azure, but not working correctly, you may need to engage Microsoft Test Drive developer team for assistance. 
 
 Since the Azure Functions and Azure Logic Apps are hosted in your Azure Subscription, Microsoft Test Drive developers cannot see how your Test Drive resources are configured, or gain access to any of your Logic App or Function logs.
 
 Rather than having to manually pull the logs yourself and send to Microsoft, or schedule a call with Microsoft to troubleshoot the issue, you can leverage Azure RBAC (Role Based Access Control) to grant Microsoft Test Drive developer team read access to your Azure Resource Group that contains your Test Drive resources. This allows Microsoft Test Drive developer team to easily your configuration and execution logs to help mitigate the issue.
+
+How to grant Microsoft Test Drive developers read access to your Azure Resource Group:
+
+1) Log into the Azure Portal (https://portal.azure.com) with an account that is the owner of the Azure Subscription the Test Drive Resources are deployed to.
+
+Invite the Microsoft Support User to your Azure AD
+
+2) Navigate to 'Azure Active Directory' -> 'Users and groups' -> 'All users' 
+3) Click the 'new guest user' button in the command bar
+4) Enter the email of the following user: testdrivesupport@dynamicstestdrive.onmicrosoft.com
+5) Click the 'Invite' button
+
+Grant the Microsoft Support User read access to your Azure Resource Group
+
+6) Navigate to 'Resource Groups'
+7) Click on the Resource Group your Test Drive resources (Azure Function and Azure Logic Apps) are deployed into.
+8) Click on 'Access control (IAM)'
+9) Click on the 'Add' button on the command bar
+10) Set 'Role' to 'Reader'
+11) Set 'Assign access to' to 'Azure AD user, group, or application'
+12) In the 'select' field, search for 'testdrivesupport@dynamicstestdrive.onmicrosoft.com' and select the AD User
+13) Click the 'Save' button
+
+This steps will grant Microsoft Test Drive developer team read-only access to all the Azure Resources you have deployed in the selected Resource Group. 
+
+If you want to remove the read access for Microsoft Test Drive developer team, you can remove the RBAC read permission grant to the user, or remove the testdrivesupport@dynamicstestdrive.onmicrosoft.com guest user from your tenant. 
+
+Additional information on RBAC: https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-create-custom-roles-for-internal-external-users
