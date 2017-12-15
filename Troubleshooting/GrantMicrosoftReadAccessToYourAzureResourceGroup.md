@@ -2,7 +2,7 @@
 
 Since the Azure Functions and Azure Logic Apps used for Test Drive are hosted in your own Azure Subscription, Microsoft Test Drive developers do not have access to review how your Test Drive resources are configured, or view the logs from your Logic App or Function.
 
-Rather than having to manually retrieve the logs and Azure Function / Azure Logic App configuration yourself to send to Microsoft, or having to schedule a call with Microsoft Test Drive developers to troubleshoot the issue, you can leverage Azure RBAC (Role Based Access Control) to grant Microsoft Test Drive developer team read-only access to your Azure Resource Group that contains your Test Drive resources. This allows Microsoft Test Drive developer team to easily view the configuration of your Test Drive resources (Azure Function and Azure Logic App) and review execution logs to help understand and provide guidance on how to mitigate the issue.
+Rather than having to manually retrieve the logs and Azure Function / Azure Logic App configuration yourself to send to Microsoft Test Drive developers, or having to schedule a call to troubleshoot the issue, you can leverage Azure RBAC (Role Based Access Control) to grant Microsoft Test Drive developer team read-only access to your Azure Resource Group that contains your Test Drive resources. This allows Microsoft Test Drive developer team to easily view the configuration of your Test Drive resources (Azure Function and Azure Logic App) and review the execution logs to help understand and provide guidance on how to mitigate the issue.
 
 **How to grant Microsoft Test Drive developers read access to your Azure Resource Group:**
 
