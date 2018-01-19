@@ -44,3 +44,6 @@ Your Test Drive App Service is now connected to your Application Insights resour
 
 The cost to deploy Application Insights is very low:
 https://azure.microsoft.com/en-us/pricing/details/application-insights/ 
+
+Additional Information:
+https://blogs.msdn.microsoft.com/appserviceteam/2017/04/06/azure-functions-application-insights/
