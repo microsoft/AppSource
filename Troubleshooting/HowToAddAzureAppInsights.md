@@ -43,7 +43,9 @@ Azure Functions offers built-in integration with Azure Application Insights for 
 Your Test Drive App Service is now connected to your Application Insights resource. Telemetry data will now flow from the Test Drive App Service into the Application Insights service to provide easier troubleshooting and monitoring of your Test Drive deployment. 
 
 The cost to deploy Application Insights is very low:
+
 https://azure.microsoft.com/en-us/pricing/details/application-insights/ 
 
 Additional Information:
+
 https://blogs.msdn.microsoft.com/appserviceteam/2017/04/06/azure-functions-application-insights/
