@@ -5,7 +5,7 @@
 
 1. Develop and test your application 
 2. Enable Azure Active Directory single-sign-on. Steps to enable AAD SSO: 
-    *  https://identity.microsoft.com
+    *  https://docs.microsoft.com/ azure/active-directory/develop/active-directory-devhowto-appsource-certified
     *  [Documentation to Integrate your application with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)
 3.	Define the demo scenario and create the demo data
     * This is a critical step to your success in the marketplace, you want to land the test drive user in to a test drive instance that is pre-setup with all the ‘Wow’ or ‘elevator pitch’ scenarios. Therefore, you need to prep the demo scenarios and data sets for the scenario, you want the user to try. 
