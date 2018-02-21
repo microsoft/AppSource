@@ -1,6 +1,6 @@
 # Setting up Test Drives for Dynamics 365 for Customer Engagement app
 
-1. Deploy [this](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fd365testdrive.blob.core.windows.net%2Fmaster-sales%2F1.0.0.18%2FD365-for-sales-arm-template.json) ARM template to a new resource group in your Azure subscription. 
+1. Deploy [this](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fd365testdrive.blob.core.windows.net%2Fmaster-sales%2F1.0.0.19%2FD365-for-sales-arm-template.json) ARM template to a new resource group in your Azure subscription. 
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/Dynamics365TestDrive1.png)
 
