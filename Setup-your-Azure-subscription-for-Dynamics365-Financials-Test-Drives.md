@@ -44,7 +44,7 @@
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
 
 4. Make the newly created app a “Company Administrator”.
-    *	Install AzureAD powershell extension from [here](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185)
+    *	Install AzureAD powershell extension from [here](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell)
     *	Type below commands in AzureAD Powershell to make app company administrator
         *	" Connect-MsolService "  (login screen comes up with this command and use administrator credentials of tenant)
         *	" Get-MsolServicePrincipal " (Search for the newly created app name and copy the ObjectId)
