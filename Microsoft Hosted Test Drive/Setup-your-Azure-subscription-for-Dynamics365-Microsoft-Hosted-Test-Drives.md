@@ -51,15 +51,3 @@
 ![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/SetupAzureFinancialsAADPowerShell.png)
         
 ![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/SetupAzureFinancialsAADPowerShell2.PNG)
-
-5. Add the above created application as an application user to CRM instance
-     * Add a new user or take an existing user from Azure AD. Copy the username value
-     * Login to CRM instance and navigate to Setting -> Security -> Users
-     * Change the view to Application Users
-     * Add a new User (Ensure the form is Application user form)
-     * Enter the same username in Primary Email and User Name fields. Add the Azure ApplicationId in Application ID field. 
-     * Give any full name.
-     * Hit Save. 
-     * Other values like Azure AD Object Id and Application ID URI will get populated automatically as sync process.
-     * Click on Manage roles
-     * Assign appropriate role which should have assign and delete role privileges. 
