@@ -41,16 +41,14 @@
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
 
-4. Make the newly created app a “Company Administrator”.
-    *	Install AzureAD powershell extension from [here](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell)
-    *	Type below commands in AzureAD Powershell to make app company administrator
-        *	" Connect-MsolService "  (login screen comes up with this command and use administrator credentials of tenant)
-        *	" Get-MsolServicePrincipal " (Search for the newly created app name and copy the ObjectId)
-        *	" Add-MsolRoleMember -RoleName 'Company Administrator' -RoleMemberType ServicePrincipal -RoleMemberObjectId ‘ObjectId’ " (Replace ‘ObjectId’ with ObjectId copied in above step)
-        
-![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/SetupAzureFinancialsAADPowerShell.png)
-        
-![](https://github.com/Microsoft/AppSource/blob/master/Images/Financials/SetupAzureFinancialsAADPowerShell2.PNG)
+4. Add Service Principal role to application to allow delete access during Deprovisioning.
+    * Install-Module MSOnline  (run this command if MSOnline is not installed)
+    * Connect-MsolService (Will show a popup window to login. Login with newly created org tenant)
+    * $applicationId = "<YOUR_APPLICATION_ID>"
+    * $sp = Get-MsolServicePrincipal -AppPrincipalId $applicationId
+    * Add-MsolRoleMember -RoleObjectId fe930be7-5e62-47db-91af-98c3a49a38b1 -RoleMemberObjectId $sp.ObjectId -RoleMemberType servicePrincipal
+ 
+ ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/Connect_MsolService.PNG)
 
 5. Add the above created application as an application user to CRM instance
      * Add a new user or take an existing user from Azure AD. Copy the username value
