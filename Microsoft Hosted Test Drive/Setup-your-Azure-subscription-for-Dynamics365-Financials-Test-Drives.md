@@ -1,9 +1,6 @@
 # Setup your Azure subscription for Dynamics 365 for Financials Test Drives
 
 1.	Login to your Azure management portal
-2.	Create a new tenant in AAD (if not available already)
-      *    Navigate to https://portal.azure.com
-      *    Click on + New ->  (Search for Azure Active Directory)
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub1.jpg)
 
