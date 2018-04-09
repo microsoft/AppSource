@@ -1,10 +1,10 @@
-# Configure Test Drive in CloudPartner Portal
+# Configure Microsoft Hosted Test Drive in Cloud Partner Portal
 
-1. Login to CloudPartner portal - https://cloudpartner.azure.com
+1. Login to Cloud Partner Portal - https://cloudpartner.azure.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
-3. Navigate to Existing offer or create a new offer.
+3. Navigate to existing offer or create a new offer.
 4. Select the Test Drive in Editor to see the Test Drive Template. 
-5. Enable the Test Drive toggel button.
+5. Select 'Yes' for 'Enable a Test Drive' option.
 
 ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/EnableTestDrive.PNG)
 
