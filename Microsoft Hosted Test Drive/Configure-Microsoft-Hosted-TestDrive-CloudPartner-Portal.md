@@ -12,7 +12,7 @@
     *    **User Manual**: Upload a detailed user manual (file of type .pdf) which helps Test Drive users understand how to use your App. 
     *    **Test Drive Demo Video**: Optionally upload a video that showcases your App. 
 
-7. Grant AppSource permission to provision and deprovision Test Drive users in your tenant using the instructions located [here](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md).
+7. Grant AppSource permission to provision and deprovision Test Drive users in your tenant using the instructions located [here](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md). In this step you will generate the 'Azure AD App Id' and 'Azure AD App Key' values mentioned below.
 
 8. Provide the following fields in the 'Technical Configuration' section. ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/TestDriveTemplateInCPP.PNG)   
 
