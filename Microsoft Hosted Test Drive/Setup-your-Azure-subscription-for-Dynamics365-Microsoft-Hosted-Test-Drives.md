@@ -7,7 +7,7 @@
 
 3. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
       *    Select Azure Active Directory in the filter pane
-      *    Select “App registrations”
+      *    Select “App registrations” ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
       *    Click on the 'New application registration' button
       *    Provide an application name
       *    Select the Type of as “Web app/ API”
@@ -29,8 +29,6 @@
       *    Click the **"Grant Permissions"** button and click 'yes'. 
 
 ![](https://github.com/Azure/AzureTestDrive/raw/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
 
 4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
     * Install-Module MSOnline  (run this command if MSOnline is not installed)
