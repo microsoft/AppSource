@@ -22,22 +22,16 @@
       *    By default the App will already have "Windows Azure Active Directory" permissions. Do not modify this. 
       *    Click 'Add' button and then 'Select an API'
       *    Select 'Microsoft Graph' from the list and click 'Select'
-      *    Select "Read and write directory data" and "Read directory data" from the list and click 'select' 
-      
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDrive_GrantPermission.png) 
+      *    Select "Read and write directory data" and "Read directory data" from the list and click 'select' <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDrive_GrantPermission.png) 
       *    Click the 'done' button.
-      *    Click the **"Grant Permissions"** button and click 'yes'. 
-
-![](https://github.com/Azure/AzureTestDrive/raw/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
+      *    Click the **"Grant Permissions"** button and click 'yes'. <br /> ![](https://github.com/Azure/AzureTestDrive/raw/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
 
 4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
     * Install-Module MSOnline  (run this command if MSOnline is not installed)
     * Connect-MsolService (Will show a popup window to login. Login with newly created org tenant)
     * $applicationId = "<YOUR_APPLICATION_ID>"
     * $sp = Get-MsolServicePrincipal -AppPrincipalId $applicationId
-    * Add-MsolRoleMember -RoleObjectId fe930be7-5e62-47db-91af-98c3a49a38b1 -RoleMemberObjectId $sp.ObjectId -RoleMemberType servicePrincipal
- 
- ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/Connect_MsolService.PNG)
+    * Add-MsolRoleMember -RoleObjectId fe930be7-5e62-47db-91af-98c3a49a38b1 -RoleMemberObjectId $sp.ObjectId -RoleMemberType servicePrincipal <br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/Connect_MsolService.PNG)
 
 5. Add the above created Azure App as an application user to your Test Drive CRM instance. 
      * Add a new user or take an existing user from Azure AD. Copy the username value
@@ -49,8 +43,6 @@
      * Hit Save. 
      * Click on Manage roles
      * Assign custom security role which contains assign role and delete role privileges. 
-     * Also assign the application user the custom security role you have created for your Test Drive
-     
-![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/ApplicationUser_form_CRM.PNG)
+     * Also assign the application user the custom security role you have created for your Test Drive <br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/ApplicationUser_form_CRM.PNG)
 
 6. Publish your offer in Cloud Partner portal. Follow instruction in [link](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Configure_TestDrive_CloudPartner_Portal.md). 
