@@ -1,13 +1,10 @@
 # Setup your Azure subscription for Dynamics 365 for Customer Engagement Test Drives
 
-1.	Login to your Azure management portal
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub1.jpg)
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub2.jpg)
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub3.jpg)
-
+1.	Login to your Azure management portal - https://https://portal.azure.com
+2.   Verify that you are logged in to correct Tenant by hovering on your account icon on upper right corner. If not, switch to the Tenant associated with D365 instance from the list available after click on the account icon.
+ 
+ ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/SelectDirectory.png)
+  
 3. 	Register an application in azure. We will use this application to perform operations on your Dynamics 365 instance including adding and removing users etc. 
 
       *    Navigate to the newly created directory or already existing directory and select Azure Active directory in the filter pane.
