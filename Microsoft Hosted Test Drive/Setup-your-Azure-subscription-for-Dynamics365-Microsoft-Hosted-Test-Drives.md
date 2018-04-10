@@ -28,6 +28,8 @@
       *    Click the 'done' button.
       *    Click the **"Grant Permissions"** button and click 'yes'. 
 
+![](https://github.com/Azure/AzureTestDrive/raw/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
+
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
 
 4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
