@@ -1,6 +1,6 @@
 # Configure Microsoft Hosted Test Drive in Cloud Partner Portal
 
-1. Login to Cloud Partner Portal - https://cloudpartner.azure.com
+1. Login to Cloud Partner Portal: https://cloudpartner.azure.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
 3. Navigate to existing 'Dynamics 365 for Customer Engagement' offer or create a new 'Dynamics 365 for Customer Engagement' offer.
 4. Select the Test Drive option from the side menu.
@@ -26,6 +26,6 @@
     *    **Azure AD Tenant Name**: Provide the name of the Azure Tenant for your Dynamics 365 Instance. Use the format of <tenantname>.onmicrosoft.com.<br />Example Value: testdrive.onmicrosoft.com
     *    **Instance Web API URL**: Provide the Web API URL for your Dynamics 365 Instance. You can retrieve this value by logging into your Microsoft Dynamics 365 instance and navigating to Setting -> Customization -> Developer Resources -> Instance Web API (Copy this URL).<br />Example value: https://crmtestdrivem.crm.dynamics.com/api/data/v9.0 
 ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/InstanceWebApiUrl.png)
-    *    **Role name**: Provide the name of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive.<br />xample Value: testdriverole
+    *    **Role name**: Provide the name of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive.<br />*Example Value: testdriverole*
     
 
