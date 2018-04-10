@@ -2,13 +2,13 @@
 
 1. Login to Cloud Partner Portal - https://cloudpartner.azure.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
-3. Navigate to existing offer or create a new offer.
-4. Select the Test Drive option from the side bar.
+3. Navigate to existing 'Dynamics 365 for Customer Engagement' offer or create a new 'Dynamics 365 for Customer Engagement' offer.
+4. Select the Test Drive option from the side menu.
 5. Select 'Yes' for 'Enable a Test Drive' option.
 
 6. Provide the following fields in the 'Details' section. ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/EnableTestDrive.PNG)
 
-    *    **Description**: Provide an overview of your Test Drive. This field supports HTML if you want to provide formatted content.
+    *    **Description**: Provide an overview of your Test Drive. This text will be shown to the user while the Test Drive is being provisioned. This field supports HTML if you want to provide formatted content.
     *    **User Manual**: Upload a detailed user manual (file of type .pdf) which helps Test Drive users understand how to use your App. 
     *    **Test Drive Demo Video**: Optionally upload a video that showcases your App. 
 
