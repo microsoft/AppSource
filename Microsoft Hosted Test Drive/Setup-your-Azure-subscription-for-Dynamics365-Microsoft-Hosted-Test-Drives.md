@@ -1,4 +1,4 @@
-# Setup your Azure subscription for Dynamics 365 for Customer Engagement Test Drives
+# Setup your Azure subscription for Dynamics 365 for Customer Engagement Microsoft Hosted Test Drives
 
 1.	Login to your Azure management portal - https://https://portal.azure.com
 2.   Verify that you are logged in to correct Tenant by hovering on your account icon on upper right corner. If not, switch to the Tenant associated with D365 instance from the list available after click on the account icon.
