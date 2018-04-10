@@ -3,27 +3,29 @@
 1. Login to Cloud Partner Portal - https://cloudpartner.azure.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
 3. Navigate to existing offer or create a new offer.
-4. Select the Test Drive in Editor to see the Test Drive Template. 
+4. Select the Test Drive option from the side bar.
 5. Select 'Yes' for 'Enable a Test Drive' option.
 
 ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/EnableTestDrive.PNG)
 
-6. Add an appropriate description of your application. Like what your application is doing, so the customers get to know about your application and go for Test Drive.
-7. Upload a detailed user manual which helps customers to understand how to use your application. 
-8. Upload Test Drive demo video. However, it is an optional field, but demo video will give better clarity about your application, so the customer can easily build the understanding.
+6. Fill the description field with an overview of your Test Drive. This field supports HTML if you want to provide formatted content to your Test Drive experience. 
+7. Upload a detailed user manual which helps customers understand how to use your application. 
+8. Optionally upload a video that showcases your App. 
 
-9. Update following Technical configuration details about Test Drive.
+9. Create a new App to get the Azure App details using [linK](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md) 
 
-    *    Type of Test Drive - Choose Microsoft Hosted option
-    *    Provide Max Concurrent Test Drives number. The provided number will allow the same count of simultaneous users to do Test Drive.
-    *    Provide Test Drive experience duration to a user in Hours. Once the provided time is over, the customer will get removed from the instance. So you need to identify a sufficient time duration to understand your application.
-    *    Provide the Instance URL. A Dynamics 365 instance URL where you want to add Test Drive users and the invitation link will be sent to the same. Follow link to know more about instance URL [link](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/edit-properties-instance).
-    *    Provide the Azure Tenant ID. Login to Azure portal and navigate to AAD from Panel -> Select Properties from menu blade -> Get the Directory ID.
-    *    Create a new App to get the Azure App details using [linK](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md) 
-    *    Provice Azure AD App Id, Azure AD App key and Azure AD Tenant Name
-    *    Provide the Instance Web API Url - Microsoft Dynamics 365 Web API to access the shared Instance data during provisioning and deporivisiong of Test Drives. You can get the same by - Login to Microsoft Dynamics 365 instance url -> Setting -> Customization -> Developer Resources -> Instance Web API (Copy this URL).
-    *    Provide a Role Name. The same role is going to be assigned to Test Drive user and he will have the privileges according to the role. Recommended option is to create a custom Test drive role with appropriate privilages and provide the same here.
+10. Provide the following fields in the 'Technical Configuration' section ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/TestDriveTemplateInCPP.PNG)   
+
+    *    Type of Test Drive: Choose 'Microsoft Hosted' option
+    *    Max Concurrent Test Drives: Set this field to the number of concurrent users that can have an active Test Drive at any given point of time. Be aware that each user will consume a license while their Test Drive is active, so you will need to ensure you have at least this many licenses available for Test Drive users. Recommended value of 3-5.
+    *    Test Drive Duration (hours): Set this field to the number of hours the users Test Drive will be active for. After this many hours, the user will be deprovisioned from your tenant. Recommended value of 2-24 hours depending on the complexity of your App. The user can always request another Test Drive if they run out of time and want to access the Test Drive again.
+    *    Instance URL: Provide an URL that the Test Drive user will be navigated to when they are Test Driving your App. This is typically the URL of your Dynamics 365 instance that has your App and sample data installed onto. Example Value: https://testdrive.crm.dynamics.com
+    *    Azure AD Tenant Id: Provide the ID of the Azure Tenant for your Dynamics 365 Instance. To retrieve this value, login to Azure portal and navigate to AAD from Panel -> Select Properties from menu blade -> Copy the Directory ID
+    *    Azure AD App Id: ID of the App created in step 9. To retrieve this value, login to Azure portal and navigate to AAD from Panel -> Select Properties from menu blade -> Copy the Directory ID
+    *    Azure AD App Key: ID of the App created in step 9. To retrieve this value, login to Azure portal and navigate to AAD from Panel -> Select Properties from menu blade -> Copy the Directory ID
+    *    Azure AD Tenant Name: Provide the name of the Azure Tenant for your Dynamics 365 Instance. Use the format of <tenant>.onmicrosoft.com. Example Value: testdrive.onmicrosoft.com
+    *    Instance Web API URL: Provide the Web API URL for your Dynamics 365 Instance. You can retrieve this value by logging into your Microsoft Dynamics 365 instance and navigating to Setting -> Customization -> Developer Resources -> Instance Web API (Copy this URL). Example value: https://crmtestdrivem.crm.dynamics.com/api/data/v9.0
+    *    Role name: Provide the name of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. Example Value: testdriverole
     
 ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/InstanceWebApiUrl.png)
 
-![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/TestDriveTemplateInCPP.PNG)   
