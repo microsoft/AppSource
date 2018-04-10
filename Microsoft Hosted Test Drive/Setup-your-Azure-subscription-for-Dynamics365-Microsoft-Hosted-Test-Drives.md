@@ -14,10 +14,7 @@
       *    Provide any sign-on URL - Ex- https://www.bing.com (This URL is not used for Test Drive and can be updated later if needed)
       *    Click Create and wait for your app to be created.
       *    Click on "Settings" to configure the application.
-      *    Go to  Properties -> Set the 'multi-tenanted' field to 'Yes' and click save. For more information about Multi-Tenant applicaton see [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application). 
-      
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub6.jpg)
-      
+      *    Go to  Properties -> Set the 'multi-tenanted' field to 'Yes' and click save. For more information about Multi-Tenant applicaton see [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application). <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub6.jpg)
       *    Take note of your 'Application ID' displayed in the properties section. You will need this value later when configuring your Test Drive.
       *    Generate a secret for the Azure AD App. Navigate to 'Keys' in the settings menu. In the 'Passwords' section, enter a Key Description (Example "Test Drive") and set the duration to two years or as appropriate. Be aware that your Test Drive will break once this Key expires and you will need to generate and provide to AppSource a new key when this happens. 
       *    Click Save. This should generate the Azure App Secret. Copy this value as it will be hidden as soon as you navigate away from this page. You will need this value later when configuring your Test Drive.
