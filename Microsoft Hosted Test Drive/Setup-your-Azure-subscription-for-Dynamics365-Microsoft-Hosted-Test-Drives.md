@@ -4,7 +4,9 @@
 2. Verify you are in the tenant associated with your Dynamics 365 Test Drive instance by hovering your mouse over your account icon in the upper right corner. If you are not in the correct tenant, click on the account icon to switch into the correct tenant.
  
  ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/SelectDirectory.png)
-  
+
+ ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
+
 3. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
 
       *    Select Azure Active Directory in the filter pane
@@ -26,8 +28,6 @@
       *    Select "Read and write directory data" and "Read directory data" from the list and click 'select'
       *    Click the 'done' button.
       *    Click the **"Grant Permissions"** button and click 'yes'. 
-
-![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
 
