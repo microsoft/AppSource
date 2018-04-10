@@ -1,29 +1,31 @@
 # Setup your Azure subscription for Dynamics 365 for Customer Engagement Microsoft Hosted Test Drives
 
-1.	Login to your Azure management portal - https://https://portal.azure.com
-2.   Verify that you are logged in to correct Tenant by hovering on your account icon on upper right corner. If not, switch to the Tenant associated with D365 instance from the list available after click on the account icon.
+1.	Login to Azure Portal - https://portal.azure.com
+2. Verify you are in the tenant associated with your Dynamics 365 Test Drive instance by hovering your mouse over your account icon in the upper right corner. If you are not in the correct tenant, click on the account icon to switch into the correct tenant.
  
  ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/SelectDirectory.png)
   
-3. 	Register an application in azure. We will use this application to perform operations on your Dynamics 365 instance including adding and removing users etc. 
+3. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
 
-      *    Navigate to the newly created directory or already existing directory and select Azure Active directory in the filter pane.
-      *    Search “App registrations” and click on “Add”
-      *    Provide an application name.
-      *    Provide an application name.
+      *    Select Azure Active Directory in the filter pane
+      *    Select “App registrations”
+      *    Click on the 'New application registration' button
+      *    Provide an application name
       *    Select the Type of as “Web app/ API”
-      *    Provide any sign-on URL - Ex- http://localhost (It can be changed or updated as per need later on)
-      *    Click Create. It will take a while to create the application. Wait for sometime.
+      *    Provide any sign-on URL - Ex- https://www.bing.com (This URL is not used for Test Drive and can be updated later if needed)
+      *    Click Create and wait for your app to be created.
       *    Click on "Settings" to configure the application.
-      *    Go to  Properties -> Set the application as multi-tenant and hit Save. Get more details about Multi-Tenant applicaton using [link](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
-      *    Generate a client secret to access the application. Under keys, add a Key Description, set the duration to two years or as appropriate. Do remember to update this before the key expires, else your test drives will be broken. 
-      *    Click Save. This should generate the ClientSecret. Copy this value as it will be hidden afterwards. Generate a new one in case you lost the current one. 
-      *    Update the Required Permissions for the application. By default the application will have "Windows Azure Active Directory".
-      *    Click Add followed by Select an API
-      *    Find Microsoft Graph from the available list of API's and press Select
-      *    Select permissions for: "Read and write directory data", "Read directory data" under Application Permission and press Done.
-      *    Click on **"Grant Permissions"** to sync the added/updated permission.
-      *    Hit Save.
+      *    Go to  Properties -> Set the 'multi-tenanted' field to 'Yes' and click save. For more information about Multi-Tenant applicaton see [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
+      *    Take note of your 'Application ID' displayed in the properties section. You will need this value below. 
+      *    Generate a secret for the Azure AD App. Navigate to 'Keys' in the settings menu. In the 'Passwords' section, enter a Key Description (Example "Test Drive App Key) and set the duration to two years or as appropriate. Do remember to update this before the key expires, otherwise your test drive will be break.
+      *    Click Save. This should generate the Azure App Secret. Copy this value as it will be hidden as soon as you navigate away from this page.
+      *    Navigate to 'Required permissions' in the settings menu. 
+      *    By default the App will already have "Windows Azure Active Directory" permissions. Do not modify this. 
+      *    Click 'Add' button and then 'Select an API'
+      *    Select 'Microsoft Graph' from the list and click 'Select'
+      *    Select "Read and write directory data" and "Read directory data" from the list and click 'select'
+      *    Click the 'done' button.
+      *    Click the **"Grant Permissions"** button and click 'yes'. 
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
 
@@ -35,7 +37,7 @@
 
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
 
-4. Add Service Principal role to application to allow delete access during Deprovisioning.
+4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
     * Install-Module MSOnline  (run this command if MSOnline is not installed)
     * Connect-MsolService (Will show a popup window to login. Login with newly created org tenant)
     * $applicationId = "<YOUR_APPLICATION_ID>"
@@ -44,7 +46,7 @@
  
  ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/Connect_MsolService.PNG)
 
-5. Add the above created application as an application user to CRM instance
+5. Add the above created Azure App as an application user to your Test Drive CRM instance. 
      * Add a new user or take an existing user from Azure AD. Copy the username value
      * Login to CRM instance and navigate to Setting -> Security -> Users
      * Change the view to Application Users
@@ -52,10 +54,10 @@
      * Enter the same username in Primary Email and User Name fields. Add the Azure ApplicationId in Application ID field. 
      * Give any full name.
      * Hit Save. 
-     * Other values like Azure AD Object Id and Application ID URI will get populated automatically as sync process.
      * Click on Manage roles
-     * Assign appropriate role which should have assign and delete role privileges. 
-
+     * Assign custom security role which contains assign role and delete role privileges. 
+     * Also assign the application user the custom security role you have created for your Test Drive
+     
 ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/ApplicationUser_form_CRM.PNG)
 
 6. Publish your offer in Cloud Partner portal. Follow instruction in [link](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Configure_TestDrive_CloudPartner_Portal.md). 
