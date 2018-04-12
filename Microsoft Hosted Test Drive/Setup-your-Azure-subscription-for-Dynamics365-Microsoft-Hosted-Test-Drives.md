@@ -45,4 +45,3 @@
      * Assign custom security role which contains assign role and delete role privileges. 
      * Also assign the application user the custom security role you have created for your Test Drive <br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/ApplicationUser_form_CRM.PNG)
 
-6. Publish your offer in Cloud Partner portal. Follow instruction in [link](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Configure_TestDrive_CloudPartner_Portal.md). 
