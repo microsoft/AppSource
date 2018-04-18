@@ -14,7 +14,7 @@
 
 7. Grant AppSource permission to provision and deprovision Test Drive users in your tenant using the instructions located [here](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md). In this step you will generate the 'Azure AD App Id' and 'Azure AD App Key' values mentioned below.
 
-8. Provide the following fields in the 'Technical Configuration' section. ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/TestDriveTemplateInCPP.PNG)   
+8. Provide the following fields in the 'Technical Configuration' section. ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/CustomerEngagementTestDriveTemplateInCPP.PNG)   
 
     *    **Type of Test Drive**: Choose 'Microsoft Hosted' option. This indicates that Microsoft will host and maintain the service that performs the Test Drive user provisioning and deprovisioning. 
     *    **Max Concurrent Test Drives**: Set this field to the number of concurrent users that can have an active Test Drive at any given point of time. Be aware that each user will consume a Dynamics license while their Test Drive is active, so you will need to ensure you have at least this many Dynamics licenses available for Test Drive users. Recommended value of 3-5.
