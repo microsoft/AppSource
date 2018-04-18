@@ -16,7 +16,7 @@
 
 8. Provide the following fields in the 'Technical Configuration' section. ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/CustomerEngagementTestDriveTemplateInCPP.PNG)   
 
-    *    **Type of Test Drive**: Choose 'Microsoft Hosted' option. This indicates that Microsoft will host and maintain the service that performs the Test Drive user provisioning and deprovisioning. 
+    *    **Type of Test Drive**: Choose 'Microsoft Hosted (Dynamics 365 for Customer Engagement)' option. This indicates that Microsoft will host and maintain the service that performs the Test Drive user provisioning and deprovisioning. 
     *    **Max Concurrent Test Drives**: Set this field to the number of concurrent users that can have an active Test Drive at any given point of time. Be aware that each user will consume a Dynamics license while their Test Drive is active, so you will need to ensure you have at least this many Dynamics licenses available for Test Drive users. Recommended value of 3-5.
     *    **Test Drive Duration (hours)**: Set this field to the number of hours the users Test Drive will be active for. After this many hours, the user will be deprovisioned from your tenant. Recommended value of 2-24 hours depending on the complexity of your App. The user can always request another Test Drive if they run out of time and want to access the Test Drive again.
     *    **Instance URL**: Provide an URL that the Test Drive user will initially be navigated to when they start the Test Drive. This is typically the URL of your Dynamics 365 instance that has your App and sample data installed onto. Example Value: https://testdrive.crm.dynamics.com
