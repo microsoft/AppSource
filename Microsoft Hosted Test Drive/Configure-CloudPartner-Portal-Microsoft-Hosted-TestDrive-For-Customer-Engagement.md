@@ -1,4 +1,4 @@
-# Configure Microsoft Hosted Test Drive in Cloud Partner Portal
+# Configure Microsoft Hosted Test Drive for Customer Engagement in Cloud Partner Portal
 
 1. Login to Cloud Partner Portal: https://cloudpartner.azure.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
