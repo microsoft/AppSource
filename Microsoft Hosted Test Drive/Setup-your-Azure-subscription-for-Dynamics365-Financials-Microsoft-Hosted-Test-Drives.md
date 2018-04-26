@@ -1,6 +1,6 @@
 # Setup your Azure subscription for Dynamics 365 for Financials Microsoft Hosted Test Drives
 
-1.	Login to Azure Portal - https://portal.azure.com
+1.	Login to Azure Portal with Admin account - https://portal.azure.com
 2. Verify you are in the tenant associated with your Dynamics 365 Test Drive instance by hovering your mouse over your account icon in the upper right corner. If you are not in the correct tenant, click on the account icon to switch into the correct tenant.
  
 ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
@@ -27,6 +27,7 @@
       *    Click the **"Grant Permissions"** button and click 'yes'. <br /> ![](https://github.com/Azure/AzureTestDrive/raw/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
 
 4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
+    * Open an Administrative-level PowerShell command prompt.
     * Install-Module MSOnline  (run this command if MSOnline is not installed)
     * Connect-MsolService (Will show a popup window to login. Login with newly created org tenant)
     * $applicationId = "<YOUR_APPLICATION_ID>"
