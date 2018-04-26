@@ -23,7 +23,7 @@
     *    **Azure AD Tenant Id**: Provide the ID of the Azure Tenant for your Dynamics 365 Instance. To retrieve this value, login to Azure portal and navigate to 'Azure Active Directory' -> Select Properties from menu blade -> Copy the Directory ID. Example value: 72f988bf-86f1-41af-91ab-2d7cd0111234
     *    **Azure AD App Id**: ID of the Azure AD App you created in step 7.<br />Example Value: 53852862-a2ae-4e43-9461-faa49650a096
     *    **Azure AD App Key**: Secret for the Azure AD App created in step 7.<br />Example Value: IJUgaIOfq9b9LbUjeQmzNBW4VGn6grr1l/n3aMrnfdk=
-    *    **Azure AD Tenant Name**: Provide the name of the Azure Tenant for your Dynamics 365 Instance. Use the format of <tenantname>.onmicrosoft.com. Example Value: testdrive.onmicrosoft.com
+    *    **Azure AD Tenant Name**: Provide the name of the Azure Tenant for your Dynamics 365 Instance. Use the format of \<tenantname>.onmicrosoft.com. Example Value: testdrive.onmicrosoft.com
     *    **Instance Web API URL**: Provide the Web API URL for your Dynamics 365 Instance. You can retrieve this value by logging into your Microsoft Dynamics 365 instance and navigating to Setting -> Customization -> Developer Resources -> Instance Web API (Copy this URL). Example value: https://<span></span>testdrive.crm.dynamics.com/api/data/v9.0 
 ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/InstanceWebApiUrl.png)
     *    **Role name**: Provide the name of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. Example Value: testdriverole
