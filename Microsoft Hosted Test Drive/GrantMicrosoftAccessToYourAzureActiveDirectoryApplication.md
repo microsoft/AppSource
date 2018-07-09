@@ -1,12 +1,10 @@
 **How to grant access to Microsoft Support account to your Azure Active Directory Application**
 
-If you are using Microsoft Hosted Test Drive service, Azure resource group having Azure Function and Azure Logic Apps used for Test Drive 
-is hosted in Microsoft Tenant. But you have created an Azure Active Directory Application in your subscription to allow Test Drive Azure
-function to provision and deprovision users in your tenant. 
+As part of onboarding process, you must have created an Azure Active Directory Application in your subscription to allow Test Drive to provision and deprovision users in your tenant. 
 
 Since Microsoft Test drive team do not have access to review how your Azure AD application is configured and a wrong configuration could be a possible reason for a failure in Test Drive execution. Rather than scheduling a call to troublshoot issue and review the configuration, you can leverage Azure RBAC (Role Based Access Control) to grant Microsoft Test Drive developer team access to your Azure Active Directory application. This allow Microsoft Test Drive team to review the configuration and help you to understand and provide guidance on how to mitigate the issue. 
 
-**How to grant Microsoft Test Drive developers access to your Azure Resource Group:**
+**How to grant Microsoft Test Drive developers access to your Azure Active Directory:**
 
 1) Log into the Azure Portal (https://portal.azure.com) with an account that is the owner of the Azure Subscription the Test Drive Resources are deployed to.
 
