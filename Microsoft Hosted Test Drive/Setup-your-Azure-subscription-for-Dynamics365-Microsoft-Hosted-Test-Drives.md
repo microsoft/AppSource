@@ -35,7 +35,7 @@
     * Add-MsolRoleMember -RoleObjectId fe930be7-5e62-47db-91af-98c3a49a38b1 -RoleMemberObjectId $sp.ObjectId -RoleMemberType servicePrincipal <br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/Connect_MsolService.PNG)
 
 5. Add the above created Azure App as an application user to your Test Drive CRM instance. 
-     * Add a new user or take an existing user from Azure AD. Copy the username value
+     * Add a new user in Azure Active Directory. Only Name and Username (belong to same tenant) values are required to create this user, leave the other fields as default. Copy the username value.
      * Login to CRM instance and navigate to Setting -> Security -> Users
      * Change the view to Application Users
      * Add a new User (Ensure the form is Application user form)
@@ -43,6 +43,6 @@
      * Give any full name.
      * Hit Save. 
      * Click on Manage roles
-     * Assign custom security role which contains assign role and delete role privileges. 
+     * Assign custom security role which contains assign role and delete role privileges. Example - System Adminitrator role.
      * Also assign the application user the custom security role you have created for your Test Drive <br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/ApplicationUser_form_CRM.PNG)
 
