@@ -26,6 +26,6 @@
     *    **Azure AD Tenant Name**: Provide the name of the Azure Tenant for your Dynamics 365 Instance. Use the format of \<tenantname>.onmicrosoft.com. Example Value: testdrive.onmicrosoft.com
     *    **Instance Web API URL**: Provide the Web API URL for your Dynamics 365 Instance. You can retrieve this value by logging into your Microsoft Dynamics 365 instance and navigating to Setting -> Customization -> Developer Resources -> Instance Web API (Copy this URL). Example value: https://<span></span>testdrive.crm.dynamics.com/api/data/v9.0 
 ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/InstanceWebApiUrl.png)
-    *    **Role name**: Provide the name of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. Example Value: testdriverole
+    *    **Role name**: Provide the name of the custom Dynamics 365 Security Role you have created for Test Drive or you can use existing role as well. If you create a new role it should have minimum required privileges added to the role to login into CRM instnace. Refer [link](https://community.dynamics.com/crm/b/crminogic/archive/2016/11/24/minimum-privileges-required-to-login-microsoft-dynamics-365) to review minimum required privileges. This is the role that will be assigned to users during their Test Drive. Example Value: testdriverole
     
 
