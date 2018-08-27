@@ -2,7 +2,7 @@
 
 1. Login to Cloud Partner Portal: https://cloudpartner.azure.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
-3. Navigate to existing 'Dynamics 365 for Customer Engagement' offer or create a new 'Dynamics 365 for Customer Engagement' offer.
+3. Navigate to existing 'Dynamics 365 for Operations' offer or create a new 'Dynamics 365 for Operations' offer.
 4. Select the Test Drive option from the side menu.
 5. Select 'Yes' for 'Enable a Test Drive' option.
 
