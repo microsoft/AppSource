@@ -22,7 +22,7 @@
       *    By default the App will already have "Windows Azure Active Directory" permissions. Do not modify this. 
       *    Click 'Add' button and then 'Select an API'
       *    Select 'Microsoft Graph' from the list and click 'Select'
-      *    Select "Read and write directory data" and "Read directory data" from the list and click 'select' <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDrive_GrantPermission.png) 
+      *    Select "Read and write directory data" and "Read directory data" permissions under Application Permissions list and click 'select' <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDrive_GrantPermission.png) 
       *    Click the 'done' button.
       *    Click the **"Grant Permissions"** button and click 'yes'. <br /> ![](https://github.com/Azure/AzureTestDrive/raw/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
 
