@@ -25,6 +25,7 @@
     *    **Azure AD App Key**: Secret for the Azure AD App created in step 7.<br />Example Value: IJUgaIOfq9b9LbUjeQmzNBW4VGn6grr1l/n3aMrnfdk=
     *    **Azure AD Tenant Name**: Provide the name of the Azure Tenant for your Dynamics 365 Instance. Use the format of \<tenantname>.onmicrosoft.com. Example Value: testdrive.onmicrosoft.com
     *    **Trail Legal Entity**: Provide a Legal Entity to assign a trail user. You can create a new one using [link](https://technet.microsoft.com/en-us/library/hh242184.aspx)
-    *    **Role name**: Provide the name of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. Example Value: testdriverole
+    *    **Role name**: Provide the **AOT name** of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. ![](https://github.com/Microsoft/AppSource/blob/master/Images/AOTNameOfRole.JPG)
+    
     
 
