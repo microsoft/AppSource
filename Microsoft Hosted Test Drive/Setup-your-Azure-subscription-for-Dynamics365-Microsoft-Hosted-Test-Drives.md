@@ -43,6 +43,6 @@
      * Give any full name.
      * Hit Save. 
      * Click on Manage roles
-     * Assign custom or OOB security role which contains read, write and assign role privileges. Example - System Adminitrator role. <br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/SecurityRole.png)
+     * Assign custom or OOB security role which contains read, write and assign role privileges. Example - System Adminitrator role. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/SecurityRole.png)
      * Also assign the application user the custom security role you have created for your Test Drive 
 
