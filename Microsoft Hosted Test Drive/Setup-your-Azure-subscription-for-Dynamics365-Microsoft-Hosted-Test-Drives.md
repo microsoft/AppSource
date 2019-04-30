@@ -9,7 +9,7 @@
       *    Select Azure Active Directory in the filter pane
       *    Select “App registrations” <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/App%20Registration%20home.JPG)
       *    Click on the 'New registration' button
-      *    Provide an application name <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/App%20Registration.png)
+      *    Provide an application name <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Register%20App.png)
       *    Select 3rd option (Account in any organization directory and personal microsoft account) under Supported account types.
       *    Click Create and wait for your app to be created.
       *    Once App created successfully. Take note of your 'Application ID' displayed in overview. You will need this value later when configuring your Test Drive. 
