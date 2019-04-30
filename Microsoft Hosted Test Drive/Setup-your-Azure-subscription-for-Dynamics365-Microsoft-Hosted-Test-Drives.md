@@ -9,19 +9,19 @@
       *    Select Azure Active Directory in the filter pane
       *    Select “App registrations” <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/App%20Registration%20home.JPG)
       *    Click on the 'New registration' button
-      *    Provide an application name <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Register%20App.png)
-      *    Select 3rd option (Account in any organization directory and personal microsoft account) under Supported account types.
+      *    Provide an appropriate application name <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Register%20App.png)
+      *    Select radio button - "Account in any organization directory and personal microsoft account" under Supported account types.
       *    Click Create and wait for your app to be created.
-      *    Once App created successfully. Take note of your 'Application ID' displayed in overview. You will need this value later when configuring your Test Drive. 
-      *    Click on API permission under Manage Application.
-      *    Select Microsoft Graph API and choose the Application Permission type. 
-      *    Select Directory.Read.All and Directory.ReadWrite.All permissions. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Permission.png)
+      *    Once App created successfully. Take note of your 'Application ID' displayed from overview screen. You will need this value later when configuring your Test Drive. 
+      *    Navigate to API permissions under Manage Application.
+      *    Click on Add a permission button and select Microsoft Graph API. 
+      *    Click on Applicatoin permission category and select Directory.Read.All and Directory.ReadWrite.All permissions. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Permission.png)
       *    Click on Add permission button.
-      *    Once the permission is added successfully, click on Grant Admin consent for microsoft button under Grant consent. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Grant%20Permission.png)
+      *    Once the permission is added successfully, click on "Grant admin consent for microsoft" button under Grant consent followed by click on "Yes" button on the prompt message alert. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Grant%20Permission.png)
       *    Generate a secret for the Azure AD App. Navigate to 'Certificate and secrets' under Manage Application. 
       *    Click on New client secret button under Client secrets.
       *    Provide a valid description (example - "Test Drive") and select an appropriate duration. Be aware that your Test Drive will break once this Key expires and you will need to generate and provide to AppSource a new key when this happens. 
-      *    Click Add. This should generate the Azure App Secret. Copy this value as it will be hidden as soon as you navigate away from this blade. You will need this value later when configuring your Test Drive. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Secret%20Key.png)
+      *    Click on Add. This should generate the Azure App Secret. Copy this value as it will be hidden as soon as you navigate away from this blade. You will need this value later when configuring your Test Drive. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Secret%20Key.png)
 
 4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
     * Open an Administrative-level PowerShell command promt.
