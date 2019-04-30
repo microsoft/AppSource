@@ -7,7 +7,7 @@
 
 3. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
       *    Select Azure Active Directory in the filter pane
-      *    Select “App registrations” <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
+      *    Select “App registrations” <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/App%20Registration%20home.JPG)
       *    Click on the 'New registration' button
       *    Provide an application name <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/App%20Registration.png)
       *    Select 3rd option (Account in any organization directory and personal microsoft account) under Supported account types.
