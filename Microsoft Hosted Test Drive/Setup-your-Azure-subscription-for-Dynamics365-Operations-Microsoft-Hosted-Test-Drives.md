@@ -7,24 +7,21 @@
 
 3. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
       *    Select Azure Active Directory in the filter pane
-      *    Select “App registrations” <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub5.jpg)
-      *    Click on the 'New application registration' button
-      *    Provide an application name
-      *    Select the Type of as “Web app/ API”
-      *    Provide any sign-on URL - Ex- https://www.bing.com (This URL is not used for Test Drive and can be updated later if needed)
+      *    Select “App registrations” <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/App%20Registration%20home.JPG)
+      *    Click on the 'New registration' button
+      *    Provide an application name <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Register%20App.png)
+      *    Select 3rd option (Account in any organization directory and personal microsoft account) under Supported account types.
       *    Click Create and wait for your app to be created.
-      *    Click on "Settings" to configure the application.
-      *    Go to  Properties -> Set the 'multi-tenanted' field to 'Yes' and click save. For more information about Multi-Tenant applicaton see [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application). <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub6.jpg)
-      *    Take note of your 'Application ID' displayed in the properties section. You will need this value later when configuring your Test Drive.
-      *    Generate a secret for the Azure AD App. Navigate to 'Keys' in the settings menu. In the 'Passwords' section, enter a Key Description (Example "Test Drive") and set the duration to two years or as appropriate. Be aware that your Test Drive will break once this Key expires and you will need to generate and provide to AppSource a new key when this happens. 
-      *    Click Save. This should generate the Azure App Secret. Copy this value as it will be hidden as soon as you navigate away from this page. You will need this value later when configuring your Test Drive.
-      *    Navigate to 'Required permissions' in the settings menu. 
-      *    By default the App will already have "Windows Azure Active Directory" permissions. Do not modify this. 
-      *    Click 'Add' button and then 'Select an API'
-      *    Select 'Microsoft Graph' from the list and click 'Select'
-      *    Select "Read and write directory data" and "Read directory data" from the list and click 'select' <br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/TestDrive_GrantPermission.png) 
-      *    Click the 'done' button.
-      *    Click the **"Grant Permissions"** button and click 'yes'. <br /> ![](https://github.com/Azure/AzureTestDrive/raw/master/AzureTestDriveImages/TestDriveGrantPermissions.PNG)
+      *    Once App created successfully. Take note of your 'Application ID' displayed in overview. You will need this value later when configuring your Test Drive. 
+      *    Click on API permission under Manage Application.
+      *    Select Microsoft Graph API and choose the Application Permission type. 
+      *    Select Directory.Read.All and Directory.ReadWrite.All permissions. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Permission.png)
+      *    Click on Add permission button.
+      *    Once the permission is added successfully, click on Grant Admin consent for microsoft button under Grant consent. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Grant%20Permission.png)
+      *    Generate a secret for the Azure AD App. Navigate to 'Certificate and secrets' under Manage Application. 
+      *    Click on New client secret button under Client secrets.
+      *    Provide a valid description (example - "Test Drive") and select an appropriate duration. Be aware that your Test Drive will break once this Key expires and you will need to generate and provide to AppSource a new key when this happens. 
+      *    Click Add. This should generate the Azure App Secret. Copy this value as it will be hidden as soon as you navigate away from this blade. You will need this value later when configuring your Test Drive. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Secret%20Key.png)
 
 4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
     * Open an Administrative-level PowerShell commmand prompt.
