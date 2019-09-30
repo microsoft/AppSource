@@ -9,20 +9,12 @@ As part of Testdrive process, we will be using Online Management API to force sy
 
 To register/whitelist an app (Aure AD AppID) with Online Management API, we have created small automated utility to run against Online Management API and registers the App. To avail AppSource test drive option, you must be already creating all the below details and publishing in AppSource. Additionally, we would request you to run the tool to register your Azure AD App with Online Management API.
 
-**Step-1 :** Update Config: - locate this file CDSTestdriveUtility.dll.config
- <?xml version="1.0" encoding="utf-8" ?>
- <configuration>
-  <appSettings>
-    <add key="AadApplicationId" value="GUD"/>
-    <add key="AadAppCreatedOn" value="2019-08-25T19:55:23.0598498Z"/>
-    <add key="AadAppSecret" value=""/>    
-    <add key="AadAppTenantId" value=""/>
-    
-    <!-- service URL of Online Management API for worldwide Office 365 data centers.  -->
-    <add key="ServiceURL" value="https://admin.services.crm.dynamics.com/"/>
-  </appSettings>
-</configuration>
-
+**Step-1 :** Update Config: - locate this file CDSTestdriveUtility.dll.config <br />
+<br />
+ ![](https://github.com/microsoft/AppSource/blob/master/Images/CDSUtiltyXMLConfig.png)
+ 
+ <br />
+ 
 ConfigName	
 
 **AadApplicationId :**
@@ -87,9 +79,8 @@ For information about these roles, see About Office 365 admin roles
 4.	Press Enter Key
 5.	It will prompt you to enter your Tenant username and password
 6.	Press enter key again
-7.	You will see the below message 
-
-
+7.	You will see the below message <br /><br />
+![](https://github.com/microsoft/AppSource/blob/master/Images/WhiteListApp.png)
  
 
 **Validate your Azure AD App is registered/whitelisted with Online Management API**
@@ -100,9 +91,5 @@ For information about these roles, see About Office 365 admin roles
 4.	Press Enter Key
 5.	It will prompt you to enter your Tenant username and password
 6.	Press enter key again
-7.	You will see the below message 
- 
-
-
-
-
+7.	You will see the below message <br /><br />
+![](https://github.com/microsoft/AppSource/blob/master/Images/CheckWhitelistedAppStatus.png)
