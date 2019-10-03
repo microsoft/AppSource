@@ -1,9 +1,9 @@
 # Setup your Azure subscription for Dynamics 365 for Customer Engagement Microsoft Hosted Test Drives
 
 1.	Login to Azure Portal with Admin account- https://portal.azure.com
-2. Verify you are in the tenant associated with your Dynamics 365 Test Drive instance by hovering your mouse over your account icon in the upper right corner. If you are not in the correct tenant, click on the account icon to switch into the correct tenant.<br />![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
+2. Verify you are in the tenant associated with your Dynamics 365 Test Drive instance by hovering your mouse over your account icon in the upper right corner. If you are not in the correct tenant, click on the account icon to switch into the correct tenant.<br /><br />![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/SetupSub4.jpg)
 
-3.  Verify the you have Dynamics 365 Customer Engagement Plan license available. <br /><br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/D365_CE_License.JPG) 
+3.  Verify the you have Dynamics 365 Customer Engagement Plan license available. <br /><br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/D365_CE_LicenseScreen.JPG) 
 
 3. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
       *    Select Azure Active Directory in the filter pane
