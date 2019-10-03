@@ -17,7 +17,9 @@
       *    Click on Add a permission button and select Microsoft Graph API. 
       *    Click on Applicatoin permission category and select Directory.Read.All and Directory.ReadWrite.All permissions. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Permission.png)
       *    Click on Add permission button.
-      *    Once the permission is added successfully, click on "Grant admin consent for microsoft" button under Grant consent followed by click on "Yes" button on the prompt message alert. <br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Grant%20Permission.png)
+      *    Click on add permission buttin again to add Dynamics CRM - User impersonation access for whitelist Azure AD app. <br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/DynamicsCRM_UserImpersonation.JPG)
+      
+      *    Once the permission is added successfully, click on "Grant admin consent for microsoft" button under Grant consent followed by click on "Yes" button on the prompt message alert. <br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/AzureADApp_GrantedPermissions.JPG)
       *    Generate a secret for the Azure AD App. Navigate to 'Certificate and secrets' under Manage Application. 
       *    Click on New client secret button under Client secrets.
       *    Provide a valid description (example - "Test Drive") and select an appropriate duration. Be aware that your Test Drive will break once this Key expires and you will need to generate and provide to AppSource a new key when this happens. 
