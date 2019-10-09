@@ -1,4 +1,4 @@
-# User User Sync to Customer Engagement Instance
+# User Sync to Customer Engagement Instance
 
 **Why we are doing this?** 
 
@@ -7,8 +7,9 @@ As part of Testdrive process, we will be using Online Management API to force sy
 
 **What is CDS Testdrive Utility?**
 
-To register/whitelist an app (Aure AD AppID) with Online Management API, we have created small automated utility to run against Online Management API and registers the App. To avail AppSource test drive option, you must be already creating all the below details and publishing in AppSource. Additionally, we would request you to run the tool to register your Azure AD App with Online Management API.
+To register/whitelist an app (Aure AD AppID) with Online Management API, we have created small automated utility to run against Online Management API and registers the App. To avail AppSource test drive option, you must be already creating all the below details and publishing in AppSource. Additionally, we would request you to run the tool to register your Azure AD App with Online Management API. <br />
 
+**Download CDSUtility** : CDSUtility is avaible on [link](https://testdrivesalesprod.blob.core.windows.net/cds-utility-forceusersync/CDSTestdriveUtility.zip). <br /> <br />
 **Step-1 :** Update Config: - locate this file CDSTestdriveUtility.dll.config <br />
 <br />
  ![](https://github.com/microsoft/AppSource/blob/master/Images/CDSUtiltyXMLConfig.png)
