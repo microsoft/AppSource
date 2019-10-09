@@ -5,7 +5,7 @@
 
 3.  Verify the you have Dynamics 365 Customer Engagement Plan license available. <br /><br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/D365_CE_LicenseScreen.JPG) 
 
-3. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
+4. 	Create an Azure AD App in Azure. AppSource will use this App to provision and deprovision the Test Drive user in your tenant.
       *    Select Azure Active Directory in the filter pane
       *    Select “App registrations” <br /><br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/App%20Registration%20home.JPG)
       *    Click on the 'New registration' button
@@ -24,8 +24,8 @@
       *    Click on New client secret button under Client secrets.
       *    Provide a valid description (example - "Test Drive") and select an appropriate duration. Be aware that your Test Drive will break once this Key expires and you will need to generate and provide to AppSource a new key when this happens. 
       *    Click on Add. This should generate the Azure App Secret. Copy this value as it will be hidden as soon as you navigate away from this blade. You will need this value later when configuring your Test Drive. <br /><br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Secret%20Key.png)
-
-4. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
+5. Sometimes normal user sync is taking more than expected time to sync user from Azure AD to CRM instance. So we added process to force sync user and it requires Azure AD application to be whitelisted by Partner. Please refer the [link](https://github.com/microsoft/AppSource/blob/master/Microsoft%20Hosted%20Test%20Drive/CDS_Utility_to_ForceUserSync_in_CRM_Instance.md) to understand and complete the whitelisting of an Azure AD application.
+6. Add Service Principal role to application to allow the Azure AD App to remove users from your Azure tenant. 
     * Open an Administrative-level PowerShell command promt.
     * Install-Module MSOnline  (run this command if MSOnline is not installed)
     * Connect-MsolService (Will show a popup window to login. Login with newly created org tenant)
@@ -33,7 +33,7 @@
     * $sp = Get-MsolServicePrincipal -AppPrincipalId $applicationId
     * Add-MsolRoleMember -RoleObjectId fe930be7-5e62-47db-91af-98c3a49a38b1 -RoleMemberObjectId $sp.ObjectId -RoleMemberType servicePrincipal <br /><br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/Connect_MsolService.PNG)
 
-5. Add the above created Azure App as an application user to your Test Drive CRM instance. 
+7. Add the above created Azure App as an application user to your Test Drive CRM instance. 
      * Add a new user in Azure Active Directory. Only Name and Username (belong to same tenant) values are required to create this user, leave the other fields as default. Copy the username value.
      * Login to CRM instance and navigate to Setting -> Security -> Users
      * Change the view to Application Users <br /><br /> ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/ApplicationUser_form_CRM.PNG)
