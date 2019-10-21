@@ -1,22 +1,15 @@
 # Configure Microsoft Hosted Test Drive for Dynamics 365 Operations in Cloud Partner Portal
 
-1. Login to Cloud Partner Portal: https://cloudpartner.azure.com
+1. Login to Cloud Partner Portal: https://partner.microsoft.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
 3. Navigate to existing 'Dynamics 365 for Operations' offer or create a new 'Dynamics 365 for Operations' offer.
-4. Select the Test Drive option from the side menu.
-5. Select 'Yes' for 'Enable a Test Drive' option.
+4. Enable Test Drive and save the form. </br></br> ![](https://github.com/microsoft/AppSource/blob/master/Images/FO_OfferSetup.JPG)
+*    **Type of Test Drive**: Choose 'Microsoft Hosted (Dynamics 365 for Operations)' option. This indicates that Microsoft will host and maintain the service that performs the Test Drive user provisioning and deprovisioning.
 
-6. Provide the following fields in the 'Details' section. ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/EnableTestDrive.PNG)
+5. Grant AppSource permission to provision and deprovision Test Drive users in your tenant using the instructions located [here](https://github.com/Microsoft/AppSource/blob/master/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Operations-Microsoft-Hosted-Test-Drives.md). In this step you will generate the 'Azure AD App Id' and 'Azure AD App Key' values mentioned below.
 
-    *    **Description**: Provide an overview of your Test Drive. This text will be shown to the user while the Test Drive is being provisioned. This field supports HTML if you want to provide formatted content.
-    *    **User Manual**: Upload a detailed user manual (file of type .pdf) which helps Test Drive users understand how to use your App. 
-    *    **Test Drive Demo Video**: Optionally upload a video that showcases your App. 
-
-7. Grant AppSource permission to provision and deprovision Test Drive users in your tenant using the instructions located [here](https://github.com/Microsoft/AppSource/blob/master/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Operations-Microsoft-Hosted-Test-Drives.md). In this step you will generate the 'Azure AD App Id' and 'Azure AD App Key' values mentioned below.
-
-8. Provide the following fields in the 'Technical Configuration' section. ![](https://github.com/Microsoft/AppSource/blob/patch-1/Images/OperationsTestDriveTemplateInCPP.PNG)   
-
-    *    **Type of Test Drive**: Choose 'Microsoft Hosted (Dynamics 365 for Operations)' option. This indicates that Microsoft will host and maintain the service that performs the Test Drive user provisioning and deprovisioning. 
+6. Provide the following fields in the 'Technical Configuration' section. </br></br> ![](https://github.com/microsoft/AppSource/blob/master/Images/FO_TestDriveConfiguration.JPG)   
+    
     *    **Max Concurrent Test Drives**: Set this field to the number of concurrent users that can have an active Test Drive at any given point of time. Be aware that each user will consume a Dynamics license while their Test Drive is active, so you will need to ensure you have at least this many Dynamics licenses available for Test Drive users. Recommended value of 3-5.
     *    **Test Drive Duration (hours)**: Set this field to the number of hours the users Test Drive will be active for. After this many hours, the user will be deprovisioned from your tenant. Recommended value of 2-24 hours depending on the complexity of your App. The user can always request another Test Drive if they run out of time and want to access the Test Drive again.
     *    **Instance URL**: Provide an URL that the Test Drive user will initially be navigated to when they start the Test Drive. This is typically the URL of your Dynamics 365 instance that has your App and sample data installed onto. Example Value: https://<span></span>testdrive.crm.dynamics.com
@@ -27,5 +20,10 @@
     *    **Trail Legal Entity**: Provide a Legal Entity to assign a trail user. You can create a new one using [link](https://technet.microsoft.com/en-us/library/hh242184.aspx)
     *    **Role name**: Provide the **AOT name** of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. ![](https://github.com/Microsoft/AppSource/blob/master/Images/AOTNameOfRole.JPG)
     
+7. Provide the Marketplace listing details. Click on Language value in Marketplace listing to see further required fields - ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_MarketListing.JPG)
+
+    *    **Description**: Provide an overview of your Test Drive. This text will be shown to the user while the Test Drive is being provisioned. This field supports HTML if you want to provide formatted content.
+    *    **User Manual**: Upload a detailed user manual (file of type .pdf) which helps Test Drive users understand how to use your App. 
+    *    **Test Drive Demo Video**: Optionally upload a video that showcases your App. 
     
 
