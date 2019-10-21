@@ -3,12 +3,12 @@
 1. Login to Cloud Partner Portal: https://partner.microsoft.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
 3. Navigate to existing 'Dynamics 365 for Customer Engagement' offer or create a new 'Dynamics 365 for Customer Engagement' offer.
-4. Enable Test Drive and save the form. </br > ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_OfferSetup.JPG)
+4. Enable Test Drive and save the form. </br></br> ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_OfferSetup.JPG)
     *    **Type of Test Drive**: Choose 'Microsoft Hosted (Dynamics 365 for Customer Engagement & PowerApps)' option. This indicates that Microsoft will host and maintain the service that performs the Test Drive user provisioning and deprovisioning.
 
 5. Grant AppSource permission to provision and deprovision Test Drive users in your tenant using the instructions located [here](https://github.com/Microsoft/AppSource/blob/master/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md). In this step you will generate the 'Azure AD App Id' and 'Azure AD App Key' values mentioned below.
 
-6. Provide the following fields in the 'Technical Configuration' section. </br > ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_TestDriveConfiguration.JPG)   
+6. Provide the following fields in the 'Technical Configuration' section. </br></br> ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_TestDriveConfiguration.JPG)   
 
      
     *    **Max Concurrent Test Drives**: Set this field to the number of concurrent users that can have an active Test Drive at any given point of time. Be aware that each user will consume a Dynamics license while their Test Drive is active, so you will need to ensure you have at least this many Dynamics licenses available for Test Drive users. Recommended value of 3-5.
@@ -24,7 +24,7 @@
     
     *    **Please ensure that security group check is not added for user to get synced to Customer Engagement instance**
     
-7. Provide the Marketplace listing details. Click on Language value in Marketplace listing to see further required fields - </br > ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_MarketListing.JPG)
+7. Provide the Marketplace listing details. Click on Language value in Marketplace listing to see further required fields - </br></br> ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_MarketListing.JPG)
 
     *    **Description**: Provide an overview of your Test Drive. This text will be shown to the user while the Test Drive is being provisioned. This field supports HTML if you want to provide formatted content.
     *    **User Manual**: Upload a detailed user manual (file of type .pdf) which helps Test Drive users understand how to use your App. 
