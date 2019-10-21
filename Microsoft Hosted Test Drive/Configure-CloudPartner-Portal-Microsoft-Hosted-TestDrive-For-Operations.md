@@ -18,9 +18,9 @@
     *    **Azure AD App Key**: Secret for the Azure AD App created in step 7.<br />Example Value: IJUgaIOfq9b9LbUjeQmzNBW4VGn6grr1l/n3aMrnfdk=
     *    **Azure AD Tenant Name**: Provide the name of the Azure Tenant for your Dynamics 365 Instance. Use the format of \<tenantname>.onmicrosoft.com. Example Value: testdrive.onmicrosoft.com
     *    **Trail Legal Entity**: Provide a Legal Entity to assign a trail user. You can create a new one using [link](https://technet.microsoft.com/en-us/library/hh242184.aspx)
-    *    **Role name**: Provide the **AOT name** of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. ![](https://github.com/Microsoft/AppSource/blob/master/Images/AOTNameOfRole.JPG)
+    *    **Role name**: Provide the **AOT name** of the custom Dynamics 365 Security Role you have created for Test Drive. This is the role that will be assigned to users during their Test Drive. </br></br>![](https://github.com/Microsoft/AppSource/blob/master/Images/AOTNameOfRole.JPG)
     
-7. Provide the Marketplace listing details. Click on Language value in Marketplace listing to see further required fields - ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_MarketListing.JPG)
+7. Provide the Marketplace listing details. Click on Language value in Marketplace listing to see further required fields -</br></br> ![](https://github.com/microsoft/AppSource/blob/master/Images/CE_MarketListing.JPG)
 
     *    **Description**: Provide an overview of your Test Drive. This text will be shown to the user while the Test Drive is being provisioned. This field supports HTML if you want to provide formatted content.
     *    **User Manual**: Upload a detailed user manual (file of type .pdf) which helps Test Drive users understand how to use your App. 
