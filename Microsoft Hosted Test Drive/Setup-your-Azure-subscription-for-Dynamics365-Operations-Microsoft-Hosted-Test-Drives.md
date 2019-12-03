@@ -40,4 +40,3 @@
       *    Enter in the Client Id of the Azure AD app that is going to perform the on-behalf-of actions.
       *    The user Id on whose behalf the actions will be performed (typically the System Admin of the instance or a user who has privileges to add other users).<br /> ![](https://github.com/Azure/AzureTestDrive/blob/master/AzureTestDriveImages/Dynamics365OperationsAddApp.png)
 
-6. Publish your offer in Cloud Partner portal. Follow instruction in [link](https://github.com/Microsoft/AppSource/blob/patch-1/Microsoft%20Hosted%20Test%20Drive/Configure_TestDrive_CloudPartner_Portal.md). 
