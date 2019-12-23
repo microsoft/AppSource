@@ -9,20 +9,17 @@ As part of Testdrive process, we will be using Online Management API to force sy
 
 To register/whitelist an app (Aure AD AppID) with Online Management API, we have created small automated utility to run against Online Management API and registers the App. To avail AppSource test drive option, you must be already creating all the below details and publishing in AppSource. Additionally, we would request you to run the tool to register your Azure AD App with Online Management API. <br />
 
-**Download CDSUtility** : CDSUtility is avaible on [link](https://testdrivesalesprod.blob.core.windows.net/cds-utility-forceusersync/CDSTestdriveUtility.zip). <br /> <br />
+**Download CDSUtility** : CDSUtility is avaible on [link](https://testdrivesalesprod.blob.core.windows.net/cds-utility-forceusersync/CDSUtility_MFA_enabled.zip). <br /> <br />
 **Step-1 :** Update Config: - locate this file CDSTestdriveUtility.dll.config <br />
 <br />
- ![](https://github.com/microsoft/AppSource/blob/master/Images/CDSUtiltyXMLConfig.png)
+ ![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_AppConfig.JPG)
  
  <br />
  
-ConfigName	
+**ConfigName**	
 
 **AadApplicationId :**
 	Please use the same Azure AD AppId that you are submitting in AppSource Testdrive.
-
-**AadAppSecret :**
-	Please use the same Azure AD AppKey that you are submitting in AppSource Testdrive.
 
 **AadAppTenantId :**
 	Please use the same Azure Tenant that you are submitting in AppSource Testdrive.
@@ -59,7 +56,13 @@ United Kingdom (UK) : 	https://admin.services.crm11.dynamics.com
 France : 	https://admin.services.crm12.dynamics.com
 
 <br />
-<br />
+
+**Note :-**
+   Keep the default values for **AadAuthority** and **AadAppRedirectURL**. Do not change these configuration.
+</br>
+
+</br>
+</br>
 
 **How to register Azure AD AppId with Online Management API**
 
@@ -70,27 +73,54 @@ To use the Online Management API, you must have one of the following admin roles
 
 •	Service administrator
 
-For information about these roles, see About Office 365 admin roles
+For information about these roles, see [About Office 365 admin roles](https://support.office.com/en-us/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)
 
 **Step – 2:** Register/Whitelist App with Online Management API
 
 1.	Open Command Prompt
 2.	Locate the downloaded folder CDSTestdriveUtility.exe
-3.	Execute command CDSTestdriveUtility.exe whitelistapp
+3.	Execute command CDSTestdriveUtility.exe **whitelistapp**
 4.	Press Enter Key
 5.	It will prompt you to enter your Tenant username and password
 6.	Press enter key again
 7.	You will see the below message <br /><br />
-![](https://github.com/microsoft/AppSource/blob/master/Images/WhiteListApp.png)
- 
 
+**Input : Username** 
+</br>
+![](https://github.com/microsoft/AppSource/blob/master/Images/UserName.JPG)
+ 
+ </br>
+ 
+ **Input : Password** 
+ </br>
+ ![](https://github.com/microsoft/AppSource/blob/master/Images/Password.JPG)
+
+</br>
+
+**Output : Azure App is registered with Online Management API successfully** 
+</br>
+![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_output.JPG)
+
+</br>
 **Validate your Azure AD App is registered/whitelisted with Online Management API**
 
 1.	Open Command Prompt
 2.	Locate the downloaded folder CDSTestdriveUtility
-3.	Execute command CDSTestdriveUtility.exe listallapps
+3.	Execute command CDSTestdriveUtility.exe **listallapps**
 4.	Press Enter Key
 5.	It will prompt you to enter your Tenant username and password
 6.	Press enter key again
 7.	You will see the below message <br /><br />
-![](https://github.com/microsoft/AppSource/blob/master/Images/CheckWhitelistedAppStatus.png)
+![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_ListOutput.JPG)
+
+
+**Un-Register your Azure AD App with Online Management API**
+
+1.	Open Command Prompt
+2.	Locate the downloaded folder CDSTestdriveUtility
+3.	Execute command CDSTestdriveUtility.exe **unregisterapp**
+4.	Press Enter Key
+5.	It will prompt you to enter your Tenant username and password
+6.	Press enter key again
+7.	You will see the below message <br /><br />
+![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_unregistered.JPG)
