@@ -16,7 +16,7 @@ To register/whitelist an app (Aure AD AppID) with Online Management API, we have
  
  <br />
  
-**ConfigName**	
+**ConfigName -**	
 
 **AadApplicationId :**
 	Please use the same Azure AD AppId that you are submitting in AppSource Testdrive.
@@ -55,9 +55,10 @@ United Kingdom (UK) : 	https://admin.services.crm11.dynamics.com
 
 France : 	https://admin.services.crm12.dynamics.com
 </br>
+<br />
 
-**Note :-**
-   Keep the default values for **AadAuthority** and **AadAppRedirectURL**. Do not change these configuration.
+**Note -**
+   Please keep the default values for **AadAuthority** and **AadAppRedirectURL**. Do not change these configuration.
 </br>
 
 </br>
