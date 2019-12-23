@@ -54,8 +54,7 @@ Canada : 	https://admin.services.crm3.dynamics.com
 United Kingdom (UK) : 	https://admin.services.crm11.dynamics.com
 
 France : 	https://admin.services.crm12.dynamics.com
-
-<br />
+</br>
 
 **Note :-**
    Keep the default values for **AadAuthority** and **AadAppRedirectURL**. Do not change these configuration.
@@ -85,23 +84,13 @@ For information about these roles, see [About Office 365 admin roles](https://su
 6.	Press enter key again
 7.	You will see the below message <br /><br />
 
-**Input : Username** 
-</br>
-![](https://github.com/microsoft/AppSource/blob/master/Images/UserName.JPG)
+**Input : Username** <br /><br />![](https://github.com/microsoft/AppSource/blob/master/Images/UserName.JPG)
  
- </br>
- 
- **Input : Password** 
- </br>
- ![](https://github.com/microsoft/AppSource/blob/master/Images/Password.JPG)
+ **Input : Password** <br /><br />![](https://github.com/microsoft/AppSource/blob/master/Images/Password.JPG)
 
-</br>
+**Output : Azure App is registered with Online Management API successfully** <br /><br />![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_output.JPG)
 
-**Output : Azure App is registered with Online Management API successfully** 
-</br>
-![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_output.JPG)
 
-</br>
 **Validate your Azure AD App is registered/whitelisted with Online Management API**
 
 1.	Open Command Prompt
