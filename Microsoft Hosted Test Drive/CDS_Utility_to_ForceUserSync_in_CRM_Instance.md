@@ -9,8 +9,10 @@ As part of Testdrive process, we will be using Online Management API to force sy
 
 To register/whitelist an app (Aure AD AppID) with Online Management API, we have created small automated utility to run against Online Management API and registers the App. To avail AppSource test drive option, you must be already creating all the below details and publishing in AppSource. Additionally, we would request you to run the tool to register your Azure AD App with Online Management API. <br />
 
+**How to register Azure AD AppId with Online Management API**
+
 **Download CDSUtility** : CDSUtility is avaible on [link](https://testdrivesalesprod.blob.core.windows.net/cds-utility-forceusersync/CDSUtility_MFA_enabled.zip). <br /> <br />
-**Step-1 :** Update Config: - locate this file CDSTestdriveUtility.dll.config <br />
+**Step-1 :** Update Config: - locate this file CDSTestdriveUtility.exe.config <br />
 <br />
  ![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_AppConfig.JPG)
  
@@ -64,9 +66,8 @@ France : 	https://admin.services.crm12.dynamics.com
 </br>
 </br>
 
-**How to register Azure AD AppId with Online Management API**
 
-Pre-Requisites:  Office 365 Admin roles
+**Pre-Requisites:**  Office 365 Admin roles
 To use the Online Management API, you must have one of the following admin roles assigned to you in your Office 365 tenant:
 
 •	Global administrator
@@ -74,6 +75,9 @@ To use the Online Management API, you must have one of the following admin roles
 •	Service administrator
 
 For information about these roles, see [About Office 365 admin roles](https://support.office.com/en-us/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)
+
+Please ensure that Azure AD application is having User_impersonation privilege added. Refer step 4 in Setup Azure subscription article
+[link](https://github.com/microsoft/AppSource/blob/master/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md).
 
 **Step – 2:** Register/Whitelist App with Online Management API
 
