@@ -76,7 +76,7 @@ To use the Online Management API, you must have one of the following admin roles
 
 For information about these roles, see [About Office 365 admin roles](https://support.office.com/en-us/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)
 
-Please ensure that Azure AD application is having User_impersonation privilege added. Refer step 4 in Setup Azure subscription article
+Please ensure that Azure AD application is having User_impersonation privilege added and native client is set as redirect URI under Authentication. Refer step 4 in Setup Azure subscription article
 [link](https://github.com/microsoft/AppSource/blob/master/Microsoft%20Hosted%20Test%20Drive/Setup-your-Azure-subscription-for-Dynamics365-Microsoft-Hosted-Test-Drives.md).
 
 **Step – 2:** Register/Whitelist App with Online Management API
