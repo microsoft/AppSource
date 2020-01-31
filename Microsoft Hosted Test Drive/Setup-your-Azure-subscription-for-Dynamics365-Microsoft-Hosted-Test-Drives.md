@@ -12,7 +12,8 @@
       *    Provide an appropriate application name <br /><br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Register%20App.png)
       *    Select radio button - "Account in any organization directory and personal microsoft account" under Supported account types.
       *    Click Create and wait for your app to be created.
-      *    Once App created successfully. Take note of your 'Application ID' displayed from overview screen. You will need this value later when configuring your Test Drive. 
+      *    Once App created successfully. Take note of your 'Application ID' displayed from overview screen. You will need this value later when configuring your Test Drive.
+      *    Navigate to Authentication and select the nativeclient redirect URI (https://login.microsoftonline.com/common/oauth2/nativeclient) <br /><br />![](https://github.com/microsoft/AppSource/blob/master/Images/Redirect%20URI.JPG)
       *    Navigate to API permissions under Manage Application.
       *    Click on Add a permission button and select Microsoft Graph API. 
       *    Click on Applicatoin permission category and select Directory.Read.All and Directory.ReadWrite.All permissions. <br /><br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Permission.png)
