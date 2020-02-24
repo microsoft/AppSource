@@ -12,7 +12,7 @@ Since Microsoft Test drive team do not have access to review how your Azure AD a
 
 2) Navigate to 'Azure Active Directory' -> 'Users and groups' -> 'All users' 
 3) Click the 'new guest user' button in the command bar
-4) Enter the email of the following user: support@dynamicstestdrive.onmicrosoft.com
+4) Enter the user email
 5) Click the 'Invite' button
 
 **Grant the Microsoft Support user access to your Azure Active Directory**
@@ -21,12 +21,12 @@ Since Microsoft Test drive team do not have access to review how your Azure AD a
 7) Click on 'App Registration' and select your Azure AD application that you have used for Test Drive.
 8) Click on 'Setting' gear icon
 9) Click on the 'Owner' tab under setting
-10) Click on 'Add Owner' and search for the Microsoft Support Account - support@dynamicstestdrive.onmicrosoft.com
+10) Click on 'Add Owner' and search for the Microsoft Support user account
 11) Choose the account and click on 'select' button.
 
-These steps will allow Microsoft support account to review your Azure Active Directory application configuration.
+These steps will allow Microsoft support user account to review your Azure Active Directory application configuration.
 
-If you want to remove the access from Microsoft Test Drive developer team, you can remove the RBAC contributor permission granted to the user, or remove the support@dynamicstestdrive.onmicrosoft.com guest user from your tenant. 
+If you want to remove the access from Microsoft Test Drive developer team, you can remove the RBAC contributor permission granted to the user, or remove the guest user from your tenant. 
 
 Additional information on RBAC: 
  - https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-create-custom-roles-for-internal-external-users
