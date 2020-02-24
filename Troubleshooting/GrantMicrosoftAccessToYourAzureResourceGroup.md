@@ -12,7 +12,7 @@ Rather than having to manually retrieve the logs and Azure Function / Azure Logi
 
 2) Navigate to 'Azure Active Directory' -> 'Users and groups' -> 'All users' 
 3) Click the 'new guest user' button in the command bar
-4) Enter the email of the following user: support@dynamicstestdrive.onmicrosoft.com
+4) Enter the Microsoft support user email
 5) Click the 'Invite' button
 
 **Grant the Microsoft Support user access to your Azure Resource Group**
@@ -23,12 +23,12 @@ Rather than having to manually retrieve the logs and Azure Function / Azure Logi
 9) Click on the 'Add' button on the command bar
 10) Set 'Role' to 'Contributor'
 11) Set 'Assign access to' to 'Azure AD user, group, or application'
-12) In the 'select' field, search for 'support@dynamicstestdrive.onmicrosoft.com' and select the AD User
+12) In the 'select' field, search for Microsoft support user account and select the AD User
 13) Click the 'Save' button
 
 These steps will grant Microsoft Test Drive developer team access to all the Azure Resources you have deployed in the selected Resource Group. 
 
-If you want to remove the access from Microsoft Test Drive developer team, you can remove the RBAC contributor permission granted to the user, or remove the support@dynamicstestdrive.onmicrosoft.com guest user from your tenant. 
+If you want to remove the access from Microsoft Test Drive developer team, you can remove the RBAC contributor permission granted to the user, or remove the Microsoft support guest user from your tenant. 
 
 Additional information on RBAC: 
  - https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-create-custom-roles-for-internal-external-users
