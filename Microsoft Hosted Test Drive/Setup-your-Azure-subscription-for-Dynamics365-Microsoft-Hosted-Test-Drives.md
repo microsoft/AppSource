@@ -13,12 +13,12 @@
       *    Select radio button - "Account in any organization directory and personal microsoft account" under Supported account types.
       *    Click Create and wait for your app to be created.
       *    Once App created successfully. Take note of your 'Application ID' displayed from overview screen. You will need this value later when configuring your Test Drive.
-      *    Navigate to Authentication and select the nativeclient redirect URI (https://login.microsoftonline.com/common/oauth2/nativeclient) <br /><br />![](https://github.com/microsoft/AppSource/blob/master/Images/Redirect%20URI.JPG)
+      *    Navigate to Authentication and add the nativeclient redirect URI. Refer [link](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#configure-platform-settings-for-your-application) to setup this in new experience. <br /><br />![](https://github.com/microsoft/AppSource/blob/master/Images/Redirect%20URI.JPG)
       *    Navigate to API permissions under Manage Application.
       *    Click on Add a permission button and select Microsoft Graph API. 
       *    Click on Applicatoin permission category and select Directory.Read.All and Directory.ReadWrite.All permissions. <br /><br /> ![](https://github.com/Microsoft/AppSource/blob/master/Images/Add%20Permission.png)
       
-      *    Click on add permission buttin again to add Dynamics CRM - User impersonation access for whitelist Azure AD app. <br /><br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/DynamicsCRM_UserImpersonation.JPG)
+      *    Click on add permission button again to add Dynamics CRM - User impersonation access for whitelist Azure AD app. <br /><br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/DynamicsCRM_UserImpersonation.JPG)
       
       *    Once the permission is added successfully, click on "Grant admin consent for microsoft" button under Grant consent followed by click on "Yes" button on the prompt message alert. <br /><br /> ![](https://github.com/microsoft/AppSource/blob/master/Images/AzureADApp_GrantedPermissions.JPG)
       *    Generate a secret for the Azure AD App. Navigate to 'Certificate and secrets' under Manage Application. 
