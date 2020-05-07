@@ -11,10 +11,10 @@ To register/whitelist an app (Aure AD AppID) with Online Management API, we have
 
 **How to register Azure AD AppId with Online Management API**
 
-**Download CDSUtility** : CDSUtility is avaible on [link](https://testdrivesalesprod.blob.core.windows.net/cds-utility-forceusersync/CDSUtility_MFA_enabled.zip). <br /> <br />
-**Step-1 :** Update Config: - locate this file CDSTestdriveUtility.exe.config <br />
+**Download CDSUtility** : CDSUtility is avaible on [link](https://testdrivesalesprod.blob.core.windows.net/cds-utility-forceusersync/CDSTestDriveUtility_v20052.1.zip). <br /> <br />
+**Step-1 :** Update App Setting in Config file name : - CDSTestdriveUtility.exe.config <br />
 <br />
- ![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_AppConfig.JPG)
+ ![](https://github.com/microsoft/AppSource/blob/master/Images/CDS_utility_appConfig.JPG)
  
  <br />
  
@@ -25,9 +25,6 @@ To register/whitelist an app (Aure AD AppID) with Online Management API, we have
 
 **AadAppTenantId :**
 	Please use the same Azure Tenant that you are submitting in AppSource Testdrive.
-
-**AadAppCreatedOn :**
-	Optional
 
 **ServiceURL**
 	**Note:** You need to pick the region URL based on the Testdrive Dynamics 365 Instance region.
