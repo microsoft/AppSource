@@ -1,6 +1,6 @@
 # Configure Microsoft Hosted Test Drive for Business Central in Partner Center
 
-1. Login to Cloud Partner Portal: https://partner.microsoft.com
+1. Login to Partner Center: https://partner.microsoft.com
 2. If you are not able to access the above link, you need to submit a request [here](https://appsource.microsoft.com/en-us/partners/list-an-app) to publish your application. Once we review the request, you will be granted access to start the publish process. 
 3. Navigate to existing 'Dynamics 365 Business Central' offer or create a new 'Dynamics 365 Business Central' offer.
 4. Enable Test Drive and save the form. </br></br> ![](https://github.com/microsoft/AppSource/blob/master/Images/BC_OfferSetup.JPG)
